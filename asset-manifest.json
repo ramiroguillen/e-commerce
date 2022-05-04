@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/wonder-botanics/static/js/main.e6453029.js",
+    "main.js": "/wonder-botanics/static/js/main.e22c6dda.js",
     "static/media/logo.png": "/wonder-botanics/static/media/logo.e6d5d522be244c24399a.png",
     "index.html": "/wonder-botanics/index.html",
-    "main.e6453029.js.map": "/wonder-botanics/static/js/main.e6453029.js.map"
+    "main.e22c6dda.js.map": "/wonder-botanics/static/js/main.e22c6dda.js.map"
   },
   "entrypoints": [
-    "static/js/main.e6453029.js"
+    "static/js/main.e22c6dda.js"
   ]
 }
