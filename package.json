@@ -2,6 +2,7 @@
   "name": "wonder-botanics",
   "version": "0.1.0",
   "private": true,
+  "main": "index.js",
   "homepage": "https://ramiroguillen.github.io/coderhouse-reactjs/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
