@@ -31,7 +31,7 @@ const Cart = () => {
             <div className='container'>
               <div className='m-3'>
                 <h3>El carrito esta vacio</h3>
-                <Link to='/wonder-botanics' className='btn' style={{ backgroundColor: '#e4c360' }}>Ir a la tienda</Link>
+                <Link to='/coderhouse-reactjs' className='btn' style={{ backgroundColor: '#e4c360' }}>Ir a la tienda</Link>
               </div>
             </div>
           )
