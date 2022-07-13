@@ -12,7 +12,7 @@ const ItemListContainer = () => {
 
   useEffect(() => {
     getData()
-  }, [getData]);
+  }, []);
 
   return (
     <>
