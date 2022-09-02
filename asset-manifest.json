@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/coderhouse-reactjs/static/css/main.dccfb0b5.css",
-    "main.js": "/coderhouse-reactjs/static/js/main.144b8041.js",
-    "static/media/logo.png": "/coderhouse-reactjs/static/media/logo.e6d5d522be244c24399a.png",
-    "index.html": "/coderhouse-reactjs/index.html",
-    "main.dccfb0b5.css.map": "/coderhouse-reactjs/static/css/main.dccfb0b5.css.map",
-    "main.144b8041.js.map": "/coderhouse-reactjs/static/js/main.144b8041.js.map"
+    "main.css": "/e-commerce/static/css/main.dccfb0b5.css",
+    "main.js": "/e-commerce/static/js/main.36e79ba3.js",
+    "static/media/logo.png": "/e-commerce/static/media/logo.e6d5d522be244c24399a.png",
+    "index.html": "/e-commerce/index.html",
+    "main.dccfb0b5.css.map": "/e-commerce/static/css/main.dccfb0b5.css.map",
+    "main.36e79ba3.js.map": "/e-commerce/static/js/main.36e79ba3.js.map"
   },
   "entrypoints": [
     "static/css/main.dccfb0b5.css",
-    "static/js/main.144b8041.js"
+    "static/js/main.36e79ba3.js"
   ]
 }
