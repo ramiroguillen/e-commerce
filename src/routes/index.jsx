@@ -12,10 +12,10 @@ const Rutas = () => {
         <BrowserRouter>
             <Navbar />
             <Routes>
-                <Route path="/coderhouse-reactjs" element={<ItemListContainer />} />
-                <Route path="/coderhouse-reactjs/item/:id" element={<ItemDetailContainer />} />
-                <Route path="/coderhouse-reactjs/category/:category" element={<ItemListContainer />} />
-                <Route path="/coderhouse-reactjs/cart" element={<Cart />} />
+                <Route path="/e-commerce" element={<ItemListContainer />} />
+                <Route path="/e-commerce/item/:id" element={<ItemDetailContainer />} />
+                <Route path="/e-commerce/category/:category" element={<ItemListContainer />} />
+                <Route path="/e-commerce/cart" element={<Cart />} />
             </Routes>
             <Footer />
         </BrowserRouter>
