@@ -36,7 +36,7 @@ const Checkout = ({ cart, total, clear }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     generateOrder({ data: form });
-    navigate("/");
+    navigate("/e-commerce");
     clear();
   };
 
