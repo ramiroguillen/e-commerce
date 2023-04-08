@@ -12,10 +12,10 @@ const Rutas = () => {
         <BrowserRouter>
             <Navbar />
             <Routes>
-                <Route path="/e-commerce" element={<ItemListContainer />} />
-                <Route path="/e-commerce/item/:id" element={<ItemDetailContainer />} />
-                <Route path="/e-commerce/category/:category" element={<ItemListContainer />} />
-                <Route path="/e-commerce/cart" element={<Cart />} />
+                <Route path="/wonder-botanics" element={<ItemListContainer />} />
+                <Route path="/wonder-botanics/item/:id" element={<ItemDetailContainer />} />
+                <Route path="/wonder-botanics/category/:category" element={<ItemListContainer />} />
+                <Route path="/wonder-botanics/cart" element={<Cart />} />
             </Routes>
             <Footer />
         </BrowserRouter>
