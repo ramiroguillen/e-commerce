@@ -43,8 +43,6 @@ La aplicación estará disponible en http://localhost:3000
 - Cálculo del total de la compra y finalización del proceso de pago.
 - Registro de órdenes generadas por usuarios.
 
-Si deseas contribuir a la aplicación, sigue los siguientes pasos:
-
 # Licencia
 
 Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo LICENSE.md para más detalles.
