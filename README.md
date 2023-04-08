@@ -1,14 +1,13 @@
 # Wonder Botanics - Tienda virtual de botánicos para preparar tragos con gin
 
-La aplicación es una tienda virtual que ofrece una amplia variedad de botánicos para complementar el gin y preparar tragos.
-Está desarrollada utilizando React, una librería de JavaScript para la creación de interfaces de usuario.
-El enrutamiento de la aplicación se realiza mediante React Router, una librería que permite gestionar las rutas de forma sencilla en aplicaciones de React.
-El estado global de la aplicación se gestiona mediante Context, una característica de React que permite compartir datos entre componentes sin necesidad de pasarlos como propiedades.
-Se han utilizado Hooks de React para la gestión del estado de los componentes y la lógica de la aplicación.
-El diseño de la aplicación se ha realizado utilizando Bootstrap y SASS. Bootstrap es una librería CSS que facilita la creación de interfaces de usuario responsivas y adaptables a diferentes dispositivos. SASS es un preprocesador CSS que permite escribir estilos de forma más eficiente y organizada.
-Además, se ha implementado un carrito de compras en el que se pueden agregar o quitar productos, calcular el total de la compra y finalizar el proceso de pago.
-La aplicación también guarda las órdenes generadas por los usuarios en su base de datos de Firebase.
-Finalmente, se ha implementado un panel de administración para gestionar los productos y pedidos de la tienda virtual.
+La aplicación es una tienda virtual que ofrece una amplia variedad de botánicos para complementar el gin y preparar tragos.    
+Está desarrollada utilizando React, una librería de JavaScript para la creación de interfaces de usuario.    
+El enrutamiento de la aplicación se realiza mediante React Router, una librería que permite gestionar las rutas de forma sencilla en aplicaciones de React.    
+El estado global de la aplicación se gestiona mediante Context, una característica de React que permite compartir datos entre componentes sin necesidad de pasarlos como propiedades.    
+Se han utilizado Hooks de React para la gestión del estado de los componentes y la lógica de la aplicación.    
+El diseño de la aplicación se ha realizado utilizando Bootstrap y SASS. Bootstrap es una librería CSS que facilita la creación de interfaces de usuario responsivas y adaptables a diferentes dispositivos. SASS es un preprocesador CSS que permite escribir estilos de forma más eficiente y organizada.    
+Además, se ha implementado un carrito de compras en el que se pueden agregar o quitar productos, calcular el total de la compra y finalizar el proceso de pago.    
+La aplicación también guarda las órdenes generadas por los usuarios en su base de datos de Firebase.   
 
 # Instalación
 
