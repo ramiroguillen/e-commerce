@@ -15,22 +15,23 @@ Finalmente, se ha implementado un panel de administración para gestionar los pr
 Para instalar la aplicación, sigue los siguientes pasos:
 
 - Clona el repositorio:
-bash
-Copy code
+`
 git clone https://github.com/ramiroguillen/wonder-botanics.git
+`
 
 - Accede al directorio del proyecto:
-bash
-Copy code
+`
 cd wonder-botanics
+`
 
 - Instala las dependencias:
-bash
-Copy code
+`
 npm install
-
+`
 - Inicia la aplicación:
+`
 npm run start
+`
 
 La aplicación estará disponible en http://localhost:3000
 
