@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/e-commerce/static/css/main.dccfb0b5.css",
-    "main.js": "/e-commerce/static/js/main.c9a2d5d1.js",
-    "static/media/logo.png": "/e-commerce/static/media/logo.e6d5d522be244c24399a.png",
-    "index.html": "/e-commerce/index.html",
-    "main.dccfb0b5.css.map": "/e-commerce/static/css/main.dccfb0b5.css.map",
-    "main.c9a2d5d1.js.map": "/e-commerce/static/js/main.c9a2d5d1.js.map"
+    "main.css": "/wonder-botanics/static/css/main.dccfb0b5.css",
+    "main.js": "/wonder-botanics/static/js/main.91f711a0.js",
+    "static/media/logo.png": "/wonder-botanics/static/media/logo.e6d5d522be244c24399a.png",
+    "index.html": "/wonder-botanics/index.html",
+    "main.dccfb0b5.css.map": "/wonder-botanics/static/css/main.dccfb0b5.css.map",
+    "main.91f711a0.js.map": "/wonder-botanics/static/js/main.91f711a0.js.map"
   },
   "entrypoints": [
     "static/css/main.dccfb0b5.css",
-    "static/js/main.c9a2d5d1.js"
+    "static/js/main.91f711a0.js"
   ]
 }
