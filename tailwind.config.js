@@ -1,9 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    fontFamily: {
+      poppins: ["Poppins"],
+    },
+    colors: {
+      black: "#0C0A05",
+      white: "#FFFFFF",
+      primary: "#E4C360",
+    },
+    extend: {
+      backgroundImage: {
+        hero: "url(./assets/logo.png)",
+      },
+    },
   },
   plugins: [],
-}
-
+};
