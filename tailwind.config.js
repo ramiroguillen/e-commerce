@@ -9,10 +9,11 @@ module.exports = {
       black: "#0C0A05",
       white: "#FFFFFF",
       primary: "#E4C360",
+      grey: "#494844"
     },
     extend: {
       backgroundImage: {
-        hero: "url(./assets/logo.png)",
+        hero: "url(./assets/gin.jpg)",
       },
     },
   },

@@ -2,9 +2,9 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <section id="hero">
+    <section id="navbar">
       <div id="promo" className="flex justify-center bg-primary">
-        <span className="text-black text-sm">15% OFF CON TRANSFERENCIA!</span>
+        <span className="text-black">15% OFF EN EFECTIVO!</span>
       </div>
       <nav
         id="search"
