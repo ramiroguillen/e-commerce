@@ -44,7 +44,7 @@ const Contact = () => {
             <input className="w-full h-10 p-3 border border-black rounded-xl text-black border-opacity-50" />
             <label className="text-sm py-2">Mensaje</label>
             <textarea className="w-full h-48 p-3 border border-black rounded-xl text-black border-opacity-50" />
-            <button type="submit" className="bg-primary rounded-3xl w-full mt-4 h-10 font-bold">ENVIAR</button>
+            <button type="submit" className="bg-primary rounded-3xl w-full mt-3 h-10 font-bold">ENVIAR</button>
           </form>
         </div>
       </div>

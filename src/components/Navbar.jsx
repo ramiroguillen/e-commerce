@@ -28,7 +28,7 @@ const Navbar = () => {
             className="w-full h-10 p-3 rounded-xl text-black"
             placeholder="¿Qué estás buscando?"
           />
-          <button className="h-9 w-9 flex justify-center items-center">
+          <button className="h-9 w-9 flex justify-center items-center text-xl">
             <BsSearch />
           </button>
         </div>

@@ -2,6 +2,8 @@ import React from "react";
 import { MdHandyman } from "react-icons/md";
 import { RiVipCrownFill, RiPlantFill } from "react-icons/ri";
 import { BsPeopleFill } from "react-icons/bs";
+import ProductCard from "../components/ProductCard";
+import ProductCardContainer from "../containers/ProductCardContainer";
 
 const Landing = () => {
   return (
@@ -51,41 +53,11 @@ const Landing = () => {
 
       <section id="showcase" className="flex flex-col items-center px-8 mb-36">
         <h2 className="text-4xl font-bold mb-20">PEDI TU BOX</h2>
-        <div className="flex items-center justify-evenly gap-8">
-          <div className="w-96 rounded-xl drop-shadow-lg">
-            <img
-              src="https://placekitten.com/400/400"
-              alt="BOX x6"
-              className="rounded-t-xl"
-            />
-            <div className="bg-black text-white h-20 rounded-b-xl flex flex-col items-center justify-center pt-1">
-              <p className="font-thin">BOX x6</p>
-              <p className="text-lg font-bold">$ 6000</p>
-            </div>
-          </div>
-          <div className="w-96 rounded-xl drop-shadow-lg">
-            <img
-              src="https://placekitten.com/400/400"
-              alt="BOX x4"
-              className="rounded-t-xl"
-            />
-            <div className="bg-black text-white h-20 rounded-b-xl flex flex-col items-center justify-center pt-1">
-              <p className="font-thin">BOX x4</p>
-              <p className="text-lg font-bold">$ 4000</p>
-            </div>
-          </div>
-          <div className="w-96 rounded-xl drop-shadow-lg">
-            <img
-              src="https://placekitten.com/400/400"
-              alt="BOX x3"
-              className="rounded-t-xl"
-            />
-            <div className="bg-black text-white h-20 rounded-b-xl flex flex-col items-center justify-center pt-1">
-              <p className="font-thin">BOX x3</p>
-              <p className="text-lg font-bold">$ 3000</p>
-            </div>
-          </div>
-        </div>
+        <ProductCardContainer>
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+        </ProductCardContainer>
       </section>
     </>
   );
