@@ -2,7 +2,15 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Landing from "../pages/Landing";
+import {
+  Cart,
+  Contact,
+  Landing,
+  NotFound,
+  Products,
+  Promos,
+  Account,
+} from "../pages";
 
 const RouterApp = () => {
   return (
@@ -10,6 +18,12 @@ const RouterApp = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/promos" element={<Promos />} />
+        <Route path="/account" element={<Account />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </>
