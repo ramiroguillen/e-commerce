@@ -1,6 +1,8 @@
 import React from "react";
 import ProductCardContainer from "../containers/ProductCardContainer";
 import ProductCard from "../components/ProductCard";
+import ProductListContainer from "../containers/ProductListContainer";
+import ProductListItem from "../components/ProductListItem";
 
 const Products = () => {
   return (
@@ -19,6 +21,14 @@ const Products = () => {
         </div>
         <div id="botanics">
           <h2 className="text-3xl font-bold mb-3 mt-8">BOTANICOS</h2>
+          <ProductListContainer>
+            <ProductListItem />
+            <ProductListItem />
+            <ProductListItem />
+            <ProductListItem />
+            <ProductListItem />
+            <ProductListItem />
+          </ProductListContainer>
         </div>
       </div>
     </section>

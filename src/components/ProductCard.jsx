@@ -8,9 +8,10 @@ const ProductCard = () => {
         alt="BOX x4"
         className="rounded-t-xl"
       />
-      <div className="bg-black text-white h-20 rounded-b-xl flex flex-col items-center justify-center pt-1">
-        <p className="font-thin">BOX x4</p>
-        <p className="text-lg font-bold">$4000</p>
+      <div className="bg-black text-white h-28 rounded-b-xl flex flex-col items-center justify-center pt-1">
+        <p className="font-thin text-primary">BOX x4</p>
+        <p className="text-lg font-bold mb-3">$4000</p>
+        <button className="bg-primary text-black rounded uppercase text-sm mb-3 py-1 px-8">Arma tu box</button>
       </div>
     </div>
   );
