@@ -8,6 +8,7 @@ import {
   Landing,
   NotFound,
   Products,
+  ProductView,
   Promos,
   Account,
 } from "../pages";
@@ -19,6 +20,7 @@ const RouterApp = () => {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/products/:id" element={<ProductView />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/promos" element={<Promos />} />
