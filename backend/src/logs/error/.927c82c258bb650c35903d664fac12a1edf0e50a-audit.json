@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/Users/ramiroguillen/Documents/wonder-botanics/backend/src/logs/error/.927c82c258bb650c35903d664fac12a1edf0e50a-audit.json",
+    "files": [
+        {
+            "date": 1687470509876,
+            "name": "/Users/ramiroguillen/Documents/wonder-botanics/backend/src/logs/error/2023-06-22.log",
+            "hash": "18477df37a9846f3699fb2aea4ab07816a55947733737070817238d6c518c755"
+        }
+    ],
+    "hashType": "sha256"
+}

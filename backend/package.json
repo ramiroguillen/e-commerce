@@ -9,7 +9,7 @@
     "start:test": "cross-env NODE_ENV=test ts-node ./src/index.ts",
     "start:prod": "cross-env NODE_ENV=production ts-node ./src/index.ts",
     "lint": "eslint src/**/*.ts",
-    "lint:fix": "eslint src/**/*.ts --fix",
+    "lint:format": "eslint src/**/*.ts --fix",
     "tsc": "tsc"
   },
   "author": "",
