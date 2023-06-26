@@ -1,0 +1,8 @@
+2023-06-26 17:04:12 error: uncaughtException: Error while trying to connect to mySQL
+Error: Error while trying to connect to mySQL
+    at mySqlConnection (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/db/mysql.connection.ts:15:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-06-26 17:06:15 error: uncaughtException: Error while trying to connect to mySQL
+Error: Error while trying to connect to mySQL
+    at mySqlConnection (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/db/mysql.connection.ts:15:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
