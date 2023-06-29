@@ -1,14 +1,14 @@
-import { join } from 'path';
-import { config } from 'dotenv';
-import { DataSource, DataSourceOptions } from 'typeorm';
-import { SnakeNamingStrategy } from 'typeorm-naming-strategies';
+import { join } from "path";
+import { config } from "dotenv";
+import { DataSource, DataSourceOptions } from "typeorm";
+import { SnakeNamingStrategy } from "typeorm-naming-strategies";
 
-config({ path: `.env.${process.env.NODE_ENV || 'development'}.local` });
+config({ path: `.env.${process.env.NODE_ENV || "development"}.local` });
 
 const { DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD } = process.env;
 
 const configDBConnection: DataSourceOptions = {
-  type: 'mysql',
+  type: "mysql",
   host: DB_HOST,
   port: Number(DB_PORT),
   username: DB_USER,
@@ -17,9 +17,9 @@ const configDBConnection: DataSourceOptions = {
   synchronize: true,
   migrationsRun: false,
   logging: false,
-  entities: [join(__dirname, '../**/*.entity{.ts,.js}')],
-  migrations: [join(__dirname, '../**/*.migration{.ts,.js}')],
-  subscribers: [join(__dirname, '../**/*.subscriber{.ts,.js}')],
+  entities: [join(__dirname, "../**/*.entity{.ts,.js}")],
+  migrations: [join(__dirname, "../**/*.migration{.ts,.js}")],
+  subscribers: [join(__dirname, "../**/*.subscriber{.ts,.js}")],
   namingStrategy: new SnakeNamingStrategy(),
 };
 
