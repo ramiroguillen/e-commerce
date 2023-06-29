@@ -32,7 +32,7 @@
     "eslint": "^8.43.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "lint-staged": "^13.2.2",
+    "lint-staged": "^13.2.3",
     "prettier": "^2.8.8",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^4.6.3",
@@ -61,5 +61,10 @@
     "typeorm-naming-strategies": "^4.1.0",
     "winston": "^3.9.0",
     "winston-daily-rotate-file": "^4.7.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npm run lint"
+    ]
   }
 }

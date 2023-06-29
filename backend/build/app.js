@@ -13,12 +13,13 @@ const helmet_1 = __importDefault(require("helmet"));
 const config_1 = require("./config/config");
 const logger_1 = require("./utils/logger");
 const cors_config_1 = __importDefault(require("./config/cors.config"));
-class App {
+class App extends config_1.ConfigServer {
     app;
     env;
     port;
     server;
     constructor(routes) {
+        super();
         this.app = (0, express_1.default)();
         this.env = config_1.NODE_ENV || "development";
         this.port = Number(config_1.PORT) || 8000;
@@ -45,8 +46,14 @@ class App {
     /**
      * connectToDatabase
      */
-    connectToDatabase() {
-        //TODO: init DB connection
+    async connectToDatabase() {
+        return this.initConnect
+            .then(() => {
+            logger_1.logger.info("🚀 ~ App connected to DB");
+        })
+            .catch((error) => {
+            console.error(error);
+        });
     }
     /**
      * initMiddlewares

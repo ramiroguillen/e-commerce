@@ -1,4 +1,4 @@
-import { logger } from "../utils/logger";
+import { logger } from '../utils/logger';
 
 class UserService {
   constructor() {}
@@ -11,9 +11,9 @@ class UserService {
     const users = [
       {
         id: 1,
-        first_name: "Ramiro",
-        last_name: "Guillen",
-        email: "ramirojguillen@gmail.com",
+        first_name: 'Ramiro',
+        last_name: 'Guillen',
+        email: 'ramirojguillen@gmail.com',
       },
     ];
     return users;
@@ -25,9 +25,9 @@ class UserService {
     logger.info(`🚀 ~ ${UserService.name} ~ getUserById ~ ${userId}`);
     const user = {
       id: userId,
-      first_name: "Ramiro",
-      last_name: "Guillen",
-      email: "ramirojguillen@gmail.com",
+      first_name: 'Ramiro',
+      last_name: 'Guillen',
+      email: 'ramirojguillen@gmail.com',
     };
     return user;
   }
@@ -43,9 +43,7 @@ class UserService {
    * updateUserById
    */
   public async updateUserById(userId: string, userData: any) {
-    logger.info(
-      `🚀 ~ ${UserService.name} ~ updateUserById ~ ${userId}`
-    );
+    logger.info(`🚀 ~ ${UserService.name} ~ updateUserById ~ ${userId}`);
     const user = { ...userData, id: userId };
     return user;
   }
@@ -56,9 +54,9 @@ class UserService {
     logger.info(`🚀 ~ ${UserService.name} ~ deleteUserById ~ ${userId}`);
     const user = {
       id: userId,
-      first_name: "Ramiro",
-      last_name: "Guillen",
-      email: "ramirojguillen@gmail.com",
+      first_name: 'Ramiro',
+      last_name: 'Guillen',
+      email: 'ramirojguillen@gmail.com',
     };
     return user;
   }
