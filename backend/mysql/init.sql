@@ -1,1 +1,1 @@
-CREATE DATABASE IF NOT EXISTS testimonials_db_dev;
+CREATE DATABASE IF NOT EXISTS wonderbotanics_db_dev;
