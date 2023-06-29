@@ -4,7 +4,7 @@ import Landing from "./Landing";
 import NotFound from "./NotFound";
 import Products from "./Products";
 import ProductView from "./ProductView";
-import Promos from "./Promos";
+import Sales from "./Sales";
 import Account from "./Account";
 
 export {
@@ -13,7 +13,7 @@ export {
   Landing,
   NotFound,
   Products,
-  Promos,
+  Sales,
   Account,
   ProductView,
 };

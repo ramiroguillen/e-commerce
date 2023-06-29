@@ -9,7 +9,7 @@ import {
   NotFound,
   Products,
   ProductView,
-  Promos,
+  Sales,
   Account,
 } from "../pages";
 
@@ -23,7 +23,7 @@ const RouterApp = () => {
         <Route path="/products/:id" element={<ProductView />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/promos" element={<Promos />} />
+        <Route path="/sales" element={<Sales />} />
         <Route path="/account" element={<Account />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
