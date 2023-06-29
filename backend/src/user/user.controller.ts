@@ -1,7 +1,9 @@
 import { Request, Response } from "express";
 import { logger } from "../utils/logger";
+import UserService from "./user.service";
 
 class UserController {
+  private readonly UserService: UserService = new UserService();
   constructor() {}
 
   /**
@@ -9,42 +11,54 @@ class UserController {
    */
   public getAllUsers = async (_req: Request, res: Response) => {
     logger.info(`🚀 ~ ${UserController.name} ~ getAllUsers`);
-    res.status(200).json({ message: "Get All Users" });
+    const userResponse = await this.UserService.getAllUsers();
+    res.status(200).json({ message: "Get All Users", users: userResponse });
   };
   /**
    * getUserById
    */
   public getUserById = async (req: Request, res: Response) => {
     const { id: userId } = req.params;
-    logger.info(`🚀 ~ ${UserController.name} ~ getUserById ${userId}`);
-    res.status(200).json({ message: `Get User: ${userId}` });
+    logger.info(`🚀 ~ ${UserController.name} ~ getUserById ~ ${userId}`);
+    const userResponse = await this.UserService.getUserById(userId);
+    res
+      .status(200)
+      .json({ message: `Get User: ${userId}`, user: userResponse });
   };
   /**
    * createUser
    */
   public createUser = async (req: Request, res: Response) => {
+    const { body: userData } = req;
     logger.info(`🚀 ~ ${UserController.name} ~ createUser`);
-    const { body: user } = req;
-    res.status(200).json({ message: `User Created ${user} ` });
+    const userResponse = await this.UserService.createUser(userData);
+    res.status(200).json({ message: "User Created", user: userResponse });
   };
   /**
    * updateUser
    */
   public updateUserById = async (req: Request, res: Response) => {
     const { id: userId } = req.params;
-    const { body: user } = req;
+    const { body: userData } = req;
     logger.info(
-      `🚀 ~ ${UserController.name} ~ updateUserById ${userId} ~ ${user}`
+      `🚀 ~ ${UserController.name} ~ updateUserById ~ ${userId}`
     );
-    res.status(200).json({ message: `User Updated: ${userId} ~ ${user}` });
+    const userResponse = await this.UserService.updateUserById(
+      userId,
+      userData
+    );
+    res
+      .status(200)
+      .json({ message: `User Updated: ${userId}`, user: userResponse });
   };
   /**
    * deleteUser
    */
   public deleteUserById = async (req: Request, res: Response) => {
     const { id: userId } = req.params;
-    logger.info(`🚀 ~ ${UserController.name} ~ deleteUserById ${userId}`);
-    res.status(200).json({ message: `User Deleted: ${userId}` });
+    logger.info(`🚀 ~ ${UserController.name} ~ deleteUserById ~ ${userId}`);
+    const userResponse = await this.UserService.deleteUserById(userId);
+    res.status(200).json({ message: `User Deleted: ${userId}`, userResponse });
   };
 }
 
