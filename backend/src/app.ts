@@ -1,16 +1,22 @@
-import express from 'express';
-import displayRoutes from 'express-routemap';
-import cookieParser from 'cookie-parser';
-import morgan from 'morgan';
-import hpp from 'hpp';
-import cors from 'cors';
-import helmet from 'helmet';
-import { DataSource } from 'typeorm';
+import express from "express";
+import displayRoutes from "express-routemap";
+import cookieParser from "cookie-parser";
+import morgan from "morgan";
+import hpp from "hpp";
+import cors from "cors";
+import helmet from "helmet";
+import { DataSource } from "typeorm";
 
-import { API_VERSION, ConfigServer, LOG_FORMAT, NODE_ENV, PORT } from './config/config';
-import { Routes } from './interfaces/route.interface';
-import { logger, stream } from './utils/logger';
-import corsConfig from './config/cors.config';
+import {
+  API_VERSION,
+  ConfigServer,
+  LOG_FORMAT,
+  NODE_ENV,
+  PORT,
+} from "./config/config";
+import { Routes } from "./interfaces/route.interface";
+import { logger, stream } from "./utils/logger";
+import corsConfig from "./config/cors.config";
 
 class App extends ConfigServer {
   public app: express.Application;
@@ -21,7 +27,7 @@ class App extends ConfigServer {
   constructor(routes: Routes[]) {
     super();
     this.app = express();
-    this.env = NODE_ENV || 'development';
+    this.env = NODE_ENV || "development";
     this.port = Number(PORT) || 8000;
 
     this.connectToDatabase();
@@ -53,7 +59,7 @@ class App extends ConfigServer {
   private async connectToDatabase(): Promise<DataSource | void> {
     return this.initConnect
       .then(() => {
-        logger.info('🚀 ~ App connected to DB');
+        logger.info("🚀 ~ App connected to DB");
       })
       .catch((error) => {
         console.error(error);
@@ -64,7 +70,7 @@ class App extends ConfigServer {
    * initMiddlewares
    */
   public initMiddlewares() {
-    this.app.use(morgan(LOG_FORMAT ?? '../logs', { stream }));
+    this.app.use(morgan(LOG_FORMAT ?? "../logs", { stream }));
     this.app.use(cors(corsConfig));
     this.app.use(hpp());
     this.app.use(helmet());
