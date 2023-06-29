@@ -1,0 +1,74 @@
+2023-06-29 17:34:50 error: uncaughtException: ⨯ Unable to compile TypeScript:
+src/user/user.controller.ts(15,46): error TS6133: 'res' is declared but its value is never read.
+
+Error: ⨯ Unable to compile TypeScript:
+src/user/user.controller.ts(15,46): error TS6133: 'res' is declared but its value is never read.
+
+    at Object.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/user/user.controller.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1255:14)
+    at Module._compile (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-9859480609028914.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-9859480609028914.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-9859480609028914.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+2023-06-29 17:37:43 error: uncaughtException: ⨯ Unable to compile TypeScript:
+src/routes/user.routes.ts(1,18): error TS6133: 'Request' is declared but its value is never read.
+src/routes/user.routes.ts(1,27): error TS6133: 'Response' is declared but its value is never read.
+
+Error: ⨯ Unable to compile TypeScript:
+src/routes/user.routes.ts(1,18): error TS6133: 'Request' is declared but its value is never read.
+src/routes/user.routes.ts(1,27): error TS6133: 'Response' is declared but its value is never read.
+
+    at Object.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/routes/user.routes.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1255:14)
+    at Module._compile (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-9859480609028914.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-9859480609028914.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-9859480609028914.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+2023-06-29 17:37:46 error: uncaughtException: ⨯ Unable to compile TypeScript:
+src/routes/user.routes.ts(1,18): error TS6133: 'Request' is declared but its value is never read.
+src/routes/user.routes.ts(1,27): error TS6133: 'Response' is declared but its value is never read.
+
+Error: ⨯ Unable to compile TypeScript:
+src/routes/user.routes.ts(1,18): error TS6133: 'Request' is declared but its value is never read.
+src/routes/user.routes.ts(1,27): error TS6133: 'Response' is declared but its value is never read.
+
+    at Object.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/routes/user.routes.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1255:14)
+    at Module._compile (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-9859480609028914.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-9859480609028914.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-9859480609028914.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+2023-06-29 17:40:11 error: uncaughtException: ⨯ Unable to compile TypeScript:
+src/routes/user.routes.ts(1,18): error TS6133: 'Request' is declared but its value is never read.
+src/routes/user.routes.ts(1,27): error TS6133: 'Response' is declared but its value is never read.
+src/routes/user.routes.ts(25,61): error TS2551: Property 'updateUserById' does not exist on type 'UserController'. Did you mean 'updateUser'?
+src/routes/user.routes.ts(27,64): error TS2551: Property 'deleteUserById' does not exist on type 'UserController'. Did you mean 'deleteUser'?
+
+Error: ⨯ Unable to compile TypeScript:
+src/routes/user.routes.ts(1,18): error TS6133: 'Request' is declared but its value is never read.
+src/routes/user.routes.ts(1,27): error TS6133: 'Response' is declared but its value is never read.
+src/routes/user.routes.ts(25,61): error TS2551: Property 'updateUserById' does not exist on type 'UserController'. Did you mean 'updateUser'?
+src/routes/user.routes.ts(27,64): error TS2551: Property 'deleteUserById' does not exist on type 'UserController'. Did you mean 'deleteUser'?
+
+    at Object.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/routes/user.routes.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1255:14)
+    at Module._compile (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-9859480609028914.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-9859480609028914.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-9859480609028914.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)

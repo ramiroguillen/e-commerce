@@ -1,9 +1,11 @@
-import { Router, Request, Response } from "express";
+import { Router } from "express";
 import { Routes } from "../interfaces/route.interface";
+import UserController from "../user/user.controller";
 
 class userRoute implements Routes {
   public path = "/user";
   public router = Router();
+  public userController = new UserController();
 
   constructor() {
     this.initUserRoute();
@@ -13,31 +15,11 @@ class userRoute implements Routes {
    * initUserRoute
    */
   public initUserRoute() {
-    //TODO: getAllUsers
-    this.router.get(`${this.path}`, (_req: Request, res: Response) => {
-      res.status(200).json({ message: "Get All Users" });
-    });
-    //TODO: getUserById
-    this.router.get(`${this.path}/:id`, (req: Request, res: Response) => {
-      const { id: userId } = req.params;
-      res.status(200).json({ message: `Get User: ${userId}` });
-    });
-    //TODO: createUser
-    this.router.post(`${this.path}`, (req: Request, res: Response) => {
-      const { body: user } = req;
-      res.status(200).json({ message: "User Created", user });
-    });
-    //TODO: updateUserById
-    this.router.put(`${this.path}/:id`, (req: Request, res: Response) => {
-      const { id: userId } = req.params;
-      const { body: user } = req;
-      res.status(200).json({ message: `User Updated: ${userId}`, user });
-    });
-    //TODO: deleteUserById
-    this.router.delete(`${this.path}/:id`, (req: Request, res: Response) => {
-      const { id: userId } = req.params;
-      res.status(200).json({ message: `User Deleted: ${userId}` });
-    });
+    this.router.get(`${this.path}`, this.userController.getAllUsers);
+    this.router.get(`${this.path}/:id`, this.userController.getUserById);
+    this.router.post(`${this.path}`, this.userController.createUser);
+    this.router.put(`${this.path}/:id`, this.userController.updateUserById);
+    this.router.delete(`${this.path}/:id`, this.userController.deleteUserById);
   }
 }
 
