@@ -32,7 +32,7 @@ const ItemDetail = ({ product }) => {
               amount > 0 &&
               <div className='row mt-3 p-3'>
                 <div className='col-12'>
-                  <Link to="/e-commerce/cart" className='btn w-100' style={{ backgroundColor: '#e4c360' }}>Finalizar compra</Link>
+                  <Link to="/wonder-botanics/cart" className='btn w-100' style={{ backgroundColor: '#e4c360' }}>Finalizar compra</Link>
                 </div>
               </div>
             }

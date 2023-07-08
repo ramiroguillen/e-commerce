@@ -7,7 +7,7 @@ import { CartContext } from '../../context/CartContext';
 const CartWidget = () => {
   const { cart } = useContext(CartContext);
   return (
-    <Link className='nav-link' to={'/e-commerce/cart'}>
+    <Link className='nav-link' to={'/wonder-botanics/cart'}>
       <div className='row'>
         <div className='col'><h3 style={{ color: 'black' }}><BsCart3 /></h3></div>
         <div className='col' style={{ marginLeft: -20, marginBottom: -30 }}><p>{cart.length}</p></div>

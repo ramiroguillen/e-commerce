@@ -16,7 +16,7 @@ const CartItem = ({ product }) => {
         </div>
         <div className='col-8'>
           <div className='card-body'>
-            <Link className='card-title h5' to={`/e-commerce/item/${product.id}`} style={{ color: 'black', textDecoration: 'none', textTransform: 'uppercase' }}>{product.title}</Link>
+            <Link className='card-title h5' to={`/wonder-botanics/item/${product.id}`} style={{ color: 'black', textDecoration: 'none', textTransform: 'uppercase' }}>{product.title}</Link>
             <p className='card-text'>Cantidad: {product.amount}</p>
             <p className='card-text'>Precio: ${productTotalPrice}</p>
             <button className='btn' onClick={() => removeProduct(product.id)} style={{ backgroundColor: '#e4c360' }}>Borrar producto</button>

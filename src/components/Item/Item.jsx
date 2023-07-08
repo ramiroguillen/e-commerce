@@ -11,7 +11,7 @@ const Item = ({ id, title, price, thumbnail, content }) => {
           <p>${price}</p>
         </div>
         <div className='card-footer d-flex align-items-end justify-content-end' style={{ border: 'none' }}>
-          <div><Link to={`/e-commerce/item/${id}`} className='btn' style={{ backgroundColor: '#e4c360' }}>Ver más</Link></div>
+          <div><Link to={`/wonder-botanics/item/${id}`} className='btn' style={{ backgroundColor: '#e4c360' }}>Ver más</Link></div>
         </div>
       </div>
     </div>
