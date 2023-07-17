@@ -1,0 +1,55 @@
+2023-07-17 17:27:08 error: ⨯ Unable to compile TypeScript:
+src/user/user.entity.ts(21,53): error TS2339: Property 'user' does not exist on type 'CustomerEntity'.
+src/user/user.entity.ts(21,58): error TS7008: Member '(Missing)' implicitly has an 'any' type.
+src/user/user.entity.ts(21,58): error TS1146: Declaration expected.
+
+2023-07-17 17:27:24 error: ⨯ Unable to compile TypeScript:
+src/user/user.entity.ts(21,53): error TS2339: Property 'user' does not exist on type 'CustomerEntity'.
+
+2023-07-17 17:29:33 error: ⨯ Unable to compile TypeScript:
+src/user/user.entity.ts(21,53): error TS2339: Property 'user' does not exist on type 'CustomerEntity'.
+
+2023-07-17 17:29:37 error: ⨯ Unable to compile TypeScript:
+src/customer/customer.entity.ts(17,4): error TS2304: Cannot find name 'OneToOne'.
+src/customer/customer.entity.ts(17,32): error TS7006: Parameter 'user' implicitly has an 'any' type.
+
+2023-07-17 17:59:57 error: ⨯ Unable to compile TypeScript:
+src/customer/customer.entity.ts(23,4): error TS2554: Expected 2-3 arguments, but got 1.
+src/customer/customer.entity.ts(23,30): error TS7008: Member '(Missing)' implicitly has an 'any' type.
+src/customer/customer.entity.ts(23,30): error TS1146: Declaration expected.
+
+2023-07-17 18:00:35 error: ⨯ Unable to compile TypeScript:
+src/customer/customer.entity.ts(23,4): error TS2554: Expected 2-3 arguments, but got 1.
+src/customer/customer.entity.ts(23,30): error TS7008: Member '(Missing)' implicitly has an 'any' type.
+src/customer/customer.entity.ts(23,30): error TS1146: Declaration expected.
+
+2023-07-17 18:01:34 error: ⨯ Unable to compile TypeScript:
+src/customer/customer.entity.ts(23,4): error TS2554: Expected 2-3 arguments, but got 1.
+src/customer/customer.entity.ts(23,30): error TS7008: Member '(Missing)' implicitly has an 'any' type.
+src/customer/customer.entity.ts(23,30): error TS1146: Declaration expected.
+
+2023-07-17 18:01:56 error: ⨯ Unable to compile TypeScript:
+src/customer/customer.entity.ts(23,4): error TS2554: Expected 2-3 arguments, but got 1.
+src/customer/customer.entity.ts(23,30): error TS7008: Member '(Missing)' implicitly has an 'any' type.
+src/customer/customer.entity.ts(23,30): error TS1146: Declaration expected.
+
+2023-07-17 18:03:01 error: ⨯ Unable to compile TypeScript:
+src/customer/customer.entity.ts(23,4): error TS2554: Expected 2-3 arguments, but got 1.
+src/customer/customer.entity.ts(23,30): error TS7008: Member '(Missing)' implicitly has an 'any' type.
+src/customer/customer.entity.ts(23,30): error TS1146: Declaration expected.
+
+2023-07-17 18:05:05 error: ⨯ Unable to compile TypeScript:
+src/order/order.entity.ts(18,59): error TS2339: Property 'orders' does not exist on type 'CustomerEntity'.
+
+2023-07-17 18:05:06 error: ⨯ Unable to compile TypeScript:
+src/order/order.entity.ts(18,59): error TS2339: Property 'orders' does not exist on type 'CustomerEntity'.
+
+2023-07-17 18:07:01 error: ⨯ Unable to compile TypeScript:
+src/order/order.entity.ts(23,55): error TS2339: Property 'order' does not exist on type 'ProductEntity'.
+
+2023-07-17 18:07:56 error: ⨯ Unable to compile TypeScript:
+src/order/order.entity.ts(23,55): error TS2339: Property 'order' does not exist on type 'ProductEntity'.
+
+2023-07-17 18:08:01 error: ⨯ Unable to compile TypeScript:
+src/order/order.entity.ts(23,55): error TS2339: Property 'order' does not exist on type 'ProductEntity'.
+

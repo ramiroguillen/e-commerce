@@ -1,0 +1,102 @@
+2023-07-05 16:02:47 info: 🚀 ~ App ENV: development
+2023-07-05 16:02:47 info: 🚀 ~ App PORT: 8000
+2023-07-05 16:02:47 info: 🚀 ~ App connected to DB
+2023-07-05 16:03:25 info: 🚀 ~ Current Enviroment: development
+2023-07-05 16:03:25 info: 🚀 ~ Listening to Port: 8000
+2023-07-05 16:03:25 info: 🚀 ~ App connected to DB
+2023-07-05 16:05:10 info: 🚀 ~ Current Enviroment: development
+2023-07-05 16:05:10 info: 🚀 ~ Listening to Port: 8000
+2023-07-05 16:05:10 info: 🚀 ~ Connected to Database
+2023-07-05 16:05:18 info: 🚀 ~ Current Enviroment: development
+2023-07-05 16:05:18 info: 🚀 ~ Listening to Port: 8000
+2023-07-05 16:05:18 info: 🚀 ~ App connected to Database
+2023-07-05 16:05:47 info: 🚀 ~ Current Enviroment: development
+2023-07-05 16:05:47 info: 🚀 ~ Listening to Port: 8000
+2023-07-05 16:05:47 info: 🚀 ~ Database Connected
+2023-07-05 16:05:59 info: 🚀 ~ Current Enviroment: development
+2023-07-05 16:05:59 info: 🚀 ~ Listening to Port: 8000
+2023-07-05 16:05:59 info: 🚀 ~ Database Connected
+2023-07-05 18:41:44 info: 🚀 ~ Current Enviroment: development
+2023-07-05 18:41:44 info: 🚀 ~ Listening to Port: 8000
+2023-07-05 18:41:44 info: 🚀 ~ Database Connected
+2023-07-05 18:45:30 info: 🚀 ~ Current Enviroment: development
+2023-07-05 18:45:30 info: 🚀 ~ Listening to Port: 8000
+2023-07-05 18:45:31 info: 🚀 ~ Database Connected
+2023-07-05 18:45:34 info: 🚀 ~ Current Enviroment: development
+2023-07-05 18:45:34 info: 🚀 ~ Listening to Port: 8000
+2023-07-05 18:45:34 info: 🚀 ~ Database Connected
+2023-07-05 18:46:36 info: 🚀 ~ Current Enviroment: development
+2023-07-05 18:46:36 info: 🚀 ~ Listening to Port: 8000
+2023-07-05 18:46:36 info: 🚀 ~ Database Connected
+2023-07-05 18:47:50 info: 🚀 ~ Current Enviroment: development
+2023-07-05 18:47:50 info: 🚀 ~ Listening to Port: 8000
+2023-07-05 18:47:51 info: 🚀 ~ Database Connected
+2023-07-05 18:53:16 info: 🚀 ~ Current Enviroment: development
+2023-07-05 18:53:16 info: 🚀 ~ Listening to Port: 8000
+2023-07-05 18:53:16 info: 🚀 ~ Database Connected
+2023-07-05 18:54:32 info: 🚀 ~ Current Enviroment: development
+2023-07-05 18:54:32 info: 🚀 ~ Listening to Port: 8000
+2023-07-05 18:54:32 info: 🚀 ~ Database Connected
+2023-07-05 18:54:37 info: 🚀 ~ Current Enviroment: development
+2023-07-05 18:54:37 info: 🚀 ~ Listening to Port: 8000
+2023-07-05 18:54:38 info: 🚀 ~ Database Connected
+2023-07-05 18:55:01 info: 🚀 ~ UserController ~ deleteUserById ~ 1
+2023-07-05 18:55:01 info: 🚀 ~ UserService ~ deleteUserById ~ 1
+2023-07-05 18:55:01 info: [0mDELETE /api/v1/user/1 [32m200[0m 8.123 ms - 28[0m
+2023-07-05 18:55:26 info: 🚀 ~ Current Enviroment: development
+2023-07-05 18:55:26 info: 🚀 ~ Listening to Port: 8000
+2023-07-05 18:55:26 info: 🚀 ~ Database Connected
+2023-07-05 18:55:31 info: 🚀 ~ UserController ~ deleteUserById ~ 1
+2023-07-05 18:55:31 info: 🚀 ~ UserService ~ deleteUserById ~ 1
+2023-07-05 18:55:31 info: [0mDELETE /api/v1/user/1 [32m200[0m 7.464 ms - 32[0m
+2023-07-05 18:55:48 info: 🚀 ~ Current Enviroment: development
+2023-07-05 18:55:48 info: 🚀 ~ Listening to Port: 8000
+2023-07-05 18:55:49 info: 🚀 ~ Database Connected
+2023-07-05 18:55:53 info: 🚀 ~ UserController ~ deleteUserById ~ 1
+2023-07-05 18:55:53 info: 🚀 ~ UserService ~ deleteUserById ~ 1
+2023-07-05 18:55:53 info: [0mDELETE /api/v1/user/1 [32m200[0m 8.950 ms - 31[0m
+2023-07-05 18:56:04 info: 🚀 ~ UserController ~ getAllUsers
+2023-07-05 18:56:04 info: 🚀 ~ UserService ~ getAllUsers
+2023-07-05 18:56:04 info: [0mGET /api/v1/user [32m200[0m 3.926 ms - 186[0m
+2023-07-05 18:56:10 info: 🚀 ~ UserController ~ getUserById ~ 1
+2023-07-05 18:56:10 info: 🚀 ~ UserService ~ getUserById ~ 1
+2023-07-05 18:56:10 info: [0mGET /api/v1/user/1 [32m200[0m 1.683 ms - 88[0m
+2023-07-05 18:58:20 info: 🚀 ~ Current Enviroment: development
+2023-07-05 18:58:20 info: 🚀 ~ Listening to Port: 8000
+2023-07-05 18:58:20 info: 🚀 ~ Database Connected
+2023-07-05 18:59:51 info: 🚀 ~ Current Enviroment: development
+2023-07-05 18:59:51 info: 🚀 ~ Listening to Port: 8000
+2023-07-05 18:59:51 info: 🚀 ~ Database Connected
+2023-07-05 19:00:16 info: 🚀 ~ Current Enviroment: development
+2023-07-05 19:00:16 info: 🚀 ~ Listening to Port: 8000
+2023-07-05 19:00:17 info: 🚀 ~ Database Connected
+2023-07-05 19:00:43 info: 🚀 ~ Current Enviroment: development
+2023-07-05 19:00:43 info: 🚀 ~ Listening to Port: 8000
+2023-07-05 19:00:43 info: 🚀 ~ Database Connected
+2023-07-05 19:00:47 info: 🚀 ~ Current Enviroment: development
+2023-07-05 19:00:47 info: 🚀 ~ Listening to Port: 8000
+2023-07-05 19:00:47 info: 🚀 ~ Database Connected
+2023-07-05 19:00:54 info: 🚀 ~ Current Enviroment: development
+2023-07-05 19:00:54 info: 🚀 ~ Listening to Port: 8000
+2023-07-05 19:00:54 info: 🚀 ~ Database Connected
+2023-07-05 19:01:01 info: 🚀 ~ Current Enviroment: development
+2023-07-05 19:01:01 info: 🚀 ~ Listening to Port: 8000
+2023-07-05 19:01:01 info: 🚀 ~ Database Connected
+2023-07-05 19:02:10 info: 🚀 ~ UserController ~ getAllUsers
+2023-07-05 19:02:10 info: 🚀 ~ UserService ~ getAllUsers
+2023-07-05 19:02:10 info: [0mGET /api/v1/user [32m200[0m 8.341 ms - 261[0m
+2023-07-05 19:02:32 info: 🚀 ~ UserController ~ getUserById ~ 1
+2023-07-05 19:02:32 info: 🚀 ~ UserService ~ getUserById ~ 1
+2023-07-05 19:02:32 info: [0mGET /api/v1/user/1 [32m200[0m 3.757 ms - 82[0m
+2023-07-05 19:03:26 info: 🚀 ~ UserController ~ createUser
+2023-07-05 19:03:26 info: 🚀 ~ UserService ~ createUser
+2023-07-05 19:03:26 info: [0mPOST /api/v1/user [32m200[0m 15.010 ms - 82[0m
+2023-07-05 19:03:41 info: 🚀 ~ UserController ~ updateUserById ~ 1
+2023-07-05 19:03:41 info: 🚀 ~ UserService ~ updateUserById ~ 1
+2023-07-05 19:03:41 info: [0mPUT /api/v1/user/1 [32m200[0m 2.110 ms - 98[0m
+2023-07-05 19:03:45 info: 🚀 ~ UserController ~ deleteUserById ~ 1
+2023-07-05 19:03:45 info: 🚀 ~ UserService ~ deleteUserById ~ 1
+2023-07-05 19:03:45 info: [0mDELETE /api/v1/user/1 [32m200[0m 1.547 ms - 31[0m
+2023-07-05 19:04:01 info: 🚀 ~ Current Enviroment: development
+2023-07-05 19:04:01 info: 🚀 ~ Listening to Port: 8000
+2023-07-05 19:04:01 info: 🚀 ~ Database Connected

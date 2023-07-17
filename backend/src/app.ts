@@ -59,10 +59,10 @@ class App extends ConfigServer {
   private async connectToDatabase(): Promise<DataSource | void> {
     return this.initConnect
       .then(() => {
-        logger.info("🚀 ~ App connected to DB");
+        logger.info("🚀 ~ Database Connected");
       })
       .catch((error) => {
-        console.error(error);
+        logger.error(error);
       });
   }
 
@@ -101,8 +101,8 @@ class App extends ConfigServer {
   public listen() {
     this.app.listen(this.port, () => {
       displayRoutes(this.app);
-      logger.info(`🚀 ~ App ENV: ${this.env}`);
-      logger.info(`🚀 ~ App PORT: ${this.port}`);
+      logger.info(`🚀 ~ Current Enviroment: ${this.env}`);
+      logger.info(`🚀 ~ Listening to Port: ${this.port}`);
     });
   }
 

@@ -19,6 +19,16 @@
             "date": 1688070667230,
             "name": "/Users/ramiroguillen/Documents/wonder-botanics/backend/src/logs/error/2023-06-29.log",
             "hash": "7753faa80dc05a7d9522ce1b77070fdb498ea6f01f5eebb7ba163dc4028590da"
+        },
+        {
+            "date": 1688583767573,
+            "name": "/Users/ramiroguillen/Documents/wonder-botanics/backend/src/logs/error/2023-07-05.log",
+            "hash": "a8a7f1ddb9ee96bfc3fd9c08c2ada833ce3b9d6e6463c43139d2eb3098dbd0a3"
+        },
+        {
+            "date": 1689624201841,
+            "name": "/Users/ramiroguillen/Documents/wonder-botanics/backend/src/logs/error/2023-07-17.log",
+            "hash": "7c23d7cd36c2b613bad3c89b92fe8e376b84dd0db4725262bf547f3f5fc9eef9"
         }
     ],
     "hashType": "sha256"

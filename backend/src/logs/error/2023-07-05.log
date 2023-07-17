@@ -1,0 +1,16 @@
+2023-07-05 18:41:36 error: uncaughtException: ⨯ Unable to compile TypeScript:
+src/user/user.controller.ts(60,11): error TS6133: 'userResponse' is declared but its value is never read.
+
+Error: ⨯ Unable to compile TypeScript:
+src/user/user.controller.ts(60,11): error TS6133: 'userResponse' is declared but its value is never read.
+
+    at Object.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/user/user.controller.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1255:14)
+    at Module._compile (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-046054580610349394.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-046054580610349394.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-046054580610349394.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
