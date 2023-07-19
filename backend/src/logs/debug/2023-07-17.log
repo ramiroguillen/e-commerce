@@ -102,3 +102,18 @@ src/order/order.entity.ts(23,55): error TS2339: Property 'order' does not exist 
 2023-07-17 18:25:19 info: 🚀 ~ Current Enviroment: development
 2023-07-17 18:25:19 info: 🚀 ~ Listening to Port: 8000
 2023-07-17 18:25:20 info: 🚀 ~ Database Connected
+2023-07-17 19:05:52 info: 🚀 ~ Current Enviroment: development
+2023-07-17 19:05:52 info: 🚀 ~ Listening to Port: 8000
+2023-07-17 19:05:52 info: 🚀 ~ Database Connected
+2023-07-17 19:06:08 info: 🚀 ~ UserController ~ createUser
+2023-07-17 19:06:08 info: 🚀 ~ UserService ~ createUser
+2023-07-17 19:07:17 info: 🚀 ~ Current Enviroment: development
+2023-07-17 19:07:17 info: 🚀 ~ Listening to Port: 8000
+2023-07-17 19:07:17 info: 🚀 ~ Database Connected
+2023-07-17 19:07:20 info: 🚀 ~ UserController ~ createUser [object Object]
+2023-07-17 19:07:20 info: 🚀 ~ UserService ~ createUser
+2023-07-17 19:07:33 info: 🚀 ~ Current Enviroment: development
+2023-07-17 19:07:33 info: 🚀 ~ Listening to Port: 8000
+2023-07-17 19:07:33 info: 🚀 ~ Database Connected
+2023-07-17 19:08:45 info: 🚀 ~ UserController ~ createUser
+2023-07-17 19:08:45 info: 🚀 ~ UserService ~ createUser

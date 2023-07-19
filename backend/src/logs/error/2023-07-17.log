@@ -53,3 +53,71 @@ src/order/order.entity.ts(23,55): error TS2339: Property 'order' does not exist 
 2023-07-17 18:08:01 error: ⨯ Unable to compile TypeScript:
 src/order/order.entity.ts(23,55): error TS2339: Property 'order' does not exist on type 'ProductEntity'.
 
+2023-07-17 18:40:56 error: uncaughtException: ⨯ Unable to compile TypeScript:
+src/user/user.service.ts(6,3): error TS2377: Constructors for derived classes must contain a 'super' call.
+
+Error: ⨯ Unable to compile TypeScript:
+src/user/user.service.ts(6,3): error TS2377: Constructors for derived classes must contain a 'super' call.
+
+    at Object.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/user/user.service.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1255:14)
+    at Module._compile (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-46058271582551313.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-46058271582551313.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-46058271582551313.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+2023-07-17 19:03:25 error: uncaughtException: ⨯ Unable to compile TypeScript:
+src/config/base.service.ts(7,23): error TS6138: Property 'getEntity' is declared but its value is never read.
+
+Error: ⨯ Unable to compile TypeScript:
+src/config/base.service.ts(7,23): error TS6138: Property 'getEntity' is declared but its value is never read.
+
+    at Object.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/config/base.service.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1255:14)
+    at Module._compile (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-148686820246146.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-148686820246146.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-148686820246146.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+2023-07-17 19:06:08 error: uncaughtException: ER_NO_DEFAULT_FOR_FIELD: Field 'first_name' doesn't have a default value
+QueryFailedError: ER_NO_DEFAULT_FOR_FIELD: Field 'first_name' doesn't have a default value
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/driver/mysql/MysqlQueryRunner.ts:222:33)
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query.ErrorPacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Query.js:92:8)
+    at Protocol._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:88:28)
+2023-07-17 19:07:21 error: uncaughtException: ER_NO_DEFAULT_FOR_FIELD: Field 'first_name' doesn't have a default value
+QueryFailedError: ER_NO_DEFAULT_FOR_FIELD: Field 'first_name' doesn't have a default value
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/driver/mysql/MysqlQueryRunner.ts:222:33)
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query.ErrorPacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Query.js:92:8)
+    at Protocol._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:88:28)
+2023-07-17 19:08:45 error: uncaughtException: ER_NO_DEFAULT_FOR_FIELD: Field 'updated_at' doesn't have a default value
+QueryFailedError: ER_NO_DEFAULT_FOR_FIELD: Field 'updated_at' doesn't have a default value
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/driver/mysql/MysqlQueryRunner.ts:222:33)
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query.ErrorPacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Query.js:92:8)
+    at Protocol._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:88:28)

@@ -14,7 +14,7 @@ import {
   NODE_ENV,
   PORT,
 } from "./config/config";
-import { Routes } from "./interfaces/route.interface";
+import { IRoutes } from "./interfaces/route.interface";
 import { logger, stream } from "./utils/logger";
 import corsConfig from "./config/cors.config";
 
@@ -24,7 +24,7 @@ class App extends ConfigServer {
   public port: number;
   public server: any;
 
-  constructor(routes: Routes[]) {
+  constructor(routes: IRoutes[]) {
     super();
     this.app = express();
     this.env = NODE_ENV || "development";
@@ -82,7 +82,7 @@ class App extends ConfigServer {
   /**
    * initRoutes
    */
-  public initRoutes(routes: Routes[]) {
+  public initRoutes(routes: IRoutes[]) {
     routes.forEach((route) => {
       this.app.use(`/api/${API_VERSION}`, route.router);
     });

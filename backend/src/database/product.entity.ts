@@ -1,23 +1,33 @@
 import {
   Column,
+  CreateDateColumn,
   Entity,
   JoinColumn,
   ManyToOne,
   PrimaryGeneratedColumn,
+  UpdateDateColumn,
 } from "typeorm";
-import OrderEntity from "../order/order.entity";
+import OrderEntity from "./order.entity";
 
 @Entity({ name: "product" })
 class ProductEntity {
   @PrimaryGeneratedColumn()
   id!: string;
   @Column()
-  updatedAt!: Date;
+  title!: string;
   @Column()
-  createdAt!: Date;
+  price!: number;
+  @Column()
+  description!: string;
+  @Column()
+  stock!: number;
   @ManyToOne(() => OrderEntity, (order) => order.products)
   @JoinColumn({ name: "order_id" })
   order!: OrderEntity;
+  @CreateDateColumn()
+  createdAt!: Date;
+  @UpdateDateColumn()
+  updatedAt!: Date;
 }
 
 export default ProductEntity;

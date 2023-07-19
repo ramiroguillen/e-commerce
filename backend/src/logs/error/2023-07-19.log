@@ -1,0 +1,241 @@
+2023-07-19 13:40:47 error: Cannot enqueue Query after invoking quit.
+2023-07-19 13:40:47 error: uncaughtException: ER_DUP_FIELDNAME: Duplicate column name 'customer_id'
+QueryFailedError: ER_DUP_FIELDNAME: Duplicate column name 'customer_id'
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/driver/mysql/MysqlQueryRunner.ts:222:33)
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query.ErrorPacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Query.js:92:8)
+    at Protocol._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:88:28)
+2023-07-19 13:43:24 error: Cannot enqueue Query after invoking quit.
+2023-07-19 13:43:24 error: uncaughtException: ER_CANT_DROP_FIELD_OR_KEY: Can't DROP 'IDX_d72eb2a5bbff4f2533a5d4caff'; check that column/key exists
+QueryFailedError: ER_CANT_DROP_FIELD_OR_KEY: Can't DROP 'IDX_d72eb2a5bbff4f2533a5d4caff'; check that column/key exists
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/driver/mysql/MysqlQueryRunner.ts:222:33)
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query.ErrorPacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Query.js:92:8)
+    at Protocol._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:88:28)
+2023-07-19 13:54:28 error: Cannot enqueue Query after invoking quit.
+2023-07-19 13:54:28 error: uncaughtException: ER_CANT_DROP_FIELD_OR_KEY: Can't DROP 'first_name'; check that column/key exists
+QueryFailedError: ER_CANT_DROP_FIELD_OR_KEY: Can't DROP 'first_name'; check that column/key exists
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/driver/mysql/MysqlQueryRunner.ts:222:33)
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query.ErrorPacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Query.js:92:8)
+    at Protocol._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:88:28)
+2023-07-19 13:55:32 error: uncaughtException: ER_DUP_FIELDNAME: Duplicate column name 'first_name'
+QueryFailedError: ER_DUP_FIELDNAME: Duplicate column name 'first_name'
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/driver/mysql/MysqlQueryRunner.ts:222:33)
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query.ErrorPacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Query.js:92:8)
+    at Protocol._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:88:28)
+2023-07-19 14:13:15 error: Cannot enqueue Query after invoking quit.
+2023-07-19 14:13:15 error: uncaughtException: ER_TABLE_EXISTS_ERROR: Table 'product' already exists
+QueryFailedError: ER_TABLE_EXISTS_ERROR: Table 'product' already exists
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/driver/mysql/MysqlQueryRunner.ts:222:33)
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query.ErrorPacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Query.js:92:8)
+    at Protocol._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:88:28)
+2023-07-19 14:13:26 error: uncaughtException: Cannot enqueue Query after invoking quit.
+QueryFailedError: Cannot enqueue Query after invoking quit.
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/driver/mysql/MysqlQueryRunner.ts:222:33)
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at /Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:236:14
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+2023-07-19 14:13:26 error: ER_DUP_KEY: Can't write; duplicate key in table '#sql-1_6'
+2023-07-19 14:15:57 error: ER_DUP_KEY: Can't write; duplicate key in table '#sql-1_9'
+2023-07-19 14:16:03 error: uncaughtException: ⨯ Unable to compile TypeScript:
+src/database/customer.entity.ts(27,4): error TS2304: Cannot find name 'CreateDateColumn'.
+src/database/customer.entity.ts(29,4): error TS2304: Cannot find name 'UpdateDateColumn'.
+
+Error: ⨯ Unable to compile TypeScript:
+src/database/customer.entity.ts(27,4): error TS2304: Cannot find name 'CreateDateColumn'.
+src/database/customer.entity.ts(29,4): error TS2304: Cannot find name 'UpdateDateColumn'.
+
+    at Object.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/database/customer.entity.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1255:14)
+    at Module._compile (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-6820553332027239.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-6820553332027239.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-6820553332027239.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+2023-07-19 14:16:26 error: uncaughtException: ⨯ Unable to compile TypeScript:
+src/database/product.entity.ts(2,3): error TS6133: 'Column' is declared but its value is never read.
+
+Error: ⨯ Unable to compile TypeScript:
+src/database/product.entity.ts(2,3): error TS6133: 'Column' is declared but its value is never read.
+
+    at Object.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/database/product.entity.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1255:14)
+    at Module._compile (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-6820553332027239.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-6820553332027239.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-6820553332027239.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+2023-07-19 14:16:30 error: uncaughtException: ⨯ Unable to compile TypeScript:
+src/database/product.entity.ts(2,3): error TS6133: 'Column' is declared but its value is never read.
+
+Error: ⨯ Unable to compile TypeScript:
+src/database/product.entity.ts(2,3): error TS6133: 'Column' is declared but its value is never read.
+
+    at Object.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/database/product.entity.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1255:14)
+    at Module._compile (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-6820553332027239.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-6820553332027239.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-6820553332027239.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+2023-07-19 14:17:28 error: uncaughtException: Cannot enqueue Query after invoking quit.
+QueryFailedError: Cannot enqueue Query after invoking quit.
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/driver/mysql/MysqlQueryRunner.ts:222:33)
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at /Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:236:14
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+2023-07-19 14:17:28 error: ER_DUP_FIELDNAME: Duplicate column name 'name'
+2023-07-19 14:21:51 error: Cannot enqueue Query after invoking quit.
+2023-07-19 14:21:51 error: uncaughtException: ER_CANT_DROP_FIELD_OR_KEY: Can't DROP 'name'; check that column/key exists
+QueryFailedError: ER_CANT_DROP_FIELD_OR_KEY: Can't DROP 'name'; check that column/key exists
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/driver/mysql/MysqlQueryRunner.ts:222:33)
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query.ErrorPacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Query.js:92:8)
+    at Protocol._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:88:28)
+2023-07-19 14:42:08 error: Cannot enqueue Query after invoking quit.
+2023-07-19 14:42:08 error: uncaughtException: ER_TABLE_EXISTS_ERROR: Table 'product' already exists
+QueryFailedError: ER_TABLE_EXISTS_ERROR: Table 'product' already exists
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/driver/mysql/MysqlQueryRunner.ts:222:33)
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query.ErrorPacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Query.js:92:8)
+    at Protocol._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:88:28)
+2023-07-19 14:50:44 error: uncaughtException: Cannot enqueue Query after invoking quit.
+QueryFailedError: Cannot enqueue Query after invoking quit.
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/driver/mysql/MysqlQueryRunner.ts:222:33)
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at /Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:236:14
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+2023-07-19 14:50:44 error: ER_TABLE_EXISTS_ERROR: Table 'product' already exists
+2023-07-19 14:51:21 error: Cannot enqueue Query after invoking quit.
+2023-07-19 14:51:21 error: uncaughtException: ER_DUP_KEY: Can't write; duplicate key in table '#sql-1_9'
+QueryFailedError: ER_DUP_KEY: Can't write; duplicate key in table '#sql-1_9'
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/driver/mysql/MysqlQueryRunner.ts:222:33)
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query.ErrorPacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Query.js:92:8)
+    at Protocol._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:88:28)
+2023-07-19 14:52:15 error: uncaughtException: Cannot enqueue Query after invoking quit.
+QueryFailedError: Cannot enqueue Query after invoking quit.
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/driver/mysql/MysqlQueryRunner.ts:222:33)
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at /Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:236:14
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+2023-07-19 14:52:15 error: ER_TABLE_EXISTS_ERROR: Table 'product' already exists
+2023-07-19 14:58:13 error: Cannot enqueue Query after invoking quit.
+2023-07-19 14:58:13 error: uncaughtException: ER_TABLE_EXISTS_ERROR: Table 'user' already exists
+QueryFailedError: ER_TABLE_EXISTS_ERROR: Table 'user' already exists
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/driver/mysql/MysqlQueryRunner.ts:222:33)
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query.ErrorPacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Query.js:92:8)
+    at Protocol._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:88:28)
+2023-07-19 14:58:45 error: Cannot enqueue Query after invoking quit.
+2023-07-19 14:58:45 error: uncaughtException: ER_DUP_KEY: Can't write; duplicate key in table '#sql-1_13'
+QueryFailedError: ER_DUP_KEY: Can't write; duplicate key in table '#sql-1_13'
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/driver/mysql/MysqlQueryRunner.ts:222:33)
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query.ErrorPacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Query.js:92:8)
+    at Protocol._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:88:28)
+2023-07-19 15:00:17 error: uncaughtException: ER_DUP_KEY: Can't write; duplicate key in table '#sql-1_15'
+QueryFailedError: ER_DUP_KEY: Can't write; duplicate key in table '#sql-1_15'
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/driver/mysql/MysqlQueryRunner.ts:222:33)
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query.ErrorPacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Query.js:92:8)
+    at Protocol._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:88:28)
+2023-07-19 15:02:11 error: uncaughtException: ER_NO_DEFAULT_FOR_FIELD: Field 'role' doesn't have a default value
+QueryFailedError: ER_NO_DEFAULT_FOR_FIELD: Field 'role' doesn't have a default value
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/driver/mysql/MysqlQueryRunner.ts:222:33)
+    at Query.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query.ErrorPacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/sequences/Query.js:92:8)
+    at Protocol._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/mysql/lib/Connection.js:88:28)
+2023-07-19 15:06:21 error: 🚀 ~ UserService ~ getUserById ~ USER NOT FOUND

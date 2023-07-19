@@ -1,0 +1,147 @@
+2023-07-19 13:37:44 info: 🚀 ~ Current Enviroment: development
+2023-07-19 13:37:44 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 13:37:44 info: 🚀 ~ Database Connected
+2023-07-19 13:38:30 info: 🚀 ~ Current Enviroment: development
+2023-07-19 13:38:30 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 13:38:30 info: 🚀 ~ Database Connected
+2023-07-19 13:38:33 info: 🚀 ~ Current Enviroment: development
+2023-07-19 13:38:33 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 13:38:33 info: 🚀 ~ Database Connected
+2023-07-19 13:38:44 info: 🚀 ~ Current Enviroment: development
+2023-07-19 13:38:44 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 13:38:44 info: 🚀 ~ Database Connected
+2023-07-19 13:38:47 info: 🚀 ~ Current Enviroment: development
+2023-07-19 13:38:47 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 13:38:47 info: 🚀 ~ Database Connected
+2023-07-19 13:38:58 info: 🚀 ~ Current Enviroment: development
+2023-07-19 13:38:58 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 13:38:58 info: 🚀 ~ Database Connected
+2023-07-19 13:39:46 info: 🚀 ~ Current Enviroment: development
+2023-07-19 13:39:46 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 13:39:46 info: 🚀 ~ Database Connected
+2023-07-19 13:40:04 info: 🚀 ~ Current Enviroment: development
+2023-07-19 13:40:04 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 13:40:04 info: 🚀 ~ Database Connected
+2023-07-19 13:40:46 info: 🚀 ~ Current Enviroment: development
+2023-07-19 13:40:46 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 13:40:47 error: Cannot enqueue Query after invoking quit.
+2023-07-19 13:43:23 info: 🚀 ~ Current Enviroment: development
+2023-07-19 13:43:23 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 13:43:24 error: Cannot enqueue Query after invoking quit.
+2023-07-19 13:44:23 info: 🚀 ~ Current Enviroment: development
+2023-07-19 13:44:23 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 13:44:23 info: 🚀 ~ Database Connected
+2023-07-19 13:53:32 info: 🚀 ~ Current Enviroment: development
+2023-07-19 13:53:32 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 13:53:33 info: 🚀 ~ Database Connected
+2023-07-19 13:54:28 info: 🚀 ~ Current Enviroment: development
+2023-07-19 13:54:28 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 13:54:28 error: Cannot enqueue Query after invoking quit.
+2023-07-19 13:55:09 info: 🚀 ~ Current Enviroment: development
+2023-07-19 13:55:09 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 13:55:09 info: 🚀 ~ Database Connected
+2023-07-19 13:55:32 info: 🚀 ~ Current Enviroment: development
+2023-07-19 13:55:32 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 13:55:32 info: 🚀 ~ Database Connected
+2023-07-19 13:55:52 info: 🚀 ~ Current Enviroment: development
+2023-07-19 13:55:52 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 13:55:52 info: 🚀 ~ Database Connected
+2023-07-19 13:56:01 info: 🚀 ~ Current Enviroment: development
+2023-07-19 13:56:01 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 13:56:01 info: 🚀 ~ Database Connected
+2023-07-19 14:13:15 info: 🚀 ~ Current Enviroment: development
+2023-07-19 14:13:15 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 14:13:15 error: Cannot enqueue Query after invoking quit.
+2023-07-19 14:13:25 info: 🚀 ~ Current Enviroment: development
+2023-07-19 14:13:25 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 14:13:26 error: ER_DUP_KEY: Can't write; duplicate key in table '#sql-1_6'
+2023-07-19 14:15:56 info: 🚀 ~ Current Enviroment: development
+2023-07-19 14:15:56 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 14:15:57 error: ER_DUP_KEY: Can't write; duplicate key in table '#sql-1_9'
+2023-07-19 14:16:18 info: 🚀 ~ Current Enviroment: development
+2023-07-19 14:16:18 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 14:16:18 info: 🚀 ~ Database Connected
+2023-07-19 14:17:28 info: 🚀 ~ Current Enviroment: development
+2023-07-19 14:17:28 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 14:17:28 error: ER_DUP_FIELDNAME: Duplicate column name 'name'
+2023-07-19 14:21:51 info: 🚀 ~ Current Enviroment: development
+2023-07-19 14:21:51 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 14:21:51 error: Cannot enqueue Query after invoking quit.
+2023-07-19 14:42:08 info: 🚀 ~ Current Enviroment: development
+2023-07-19 14:42:08 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 14:42:08 error: Cannot enqueue Query after invoking quit.
+2023-07-19 14:50:44 info: 🚀 ~ Current Enviroment: development
+2023-07-19 14:50:44 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 14:50:44 error: ER_TABLE_EXISTS_ERROR: Table 'product' already exists
+2023-07-19 14:51:20 info: 🚀 ~ Current Enviroment: development
+2023-07-19 14:51:20 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 14:51:21 error: Cannot enqueue Query after invoking quit.
+2023-07-19 14:52:15 info: 🚀 ~ Current Enviroment: development
+2023-07-19 14:52:15 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 14:52:15 error: ER_TABLE_EXISTS_ERROR: Table 'product' already exists
+2023-07-19 14:58:13 info: 🚀 ~ Current Enviroment: development
+2023-07-19 14:58:13 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 14:58:13 error: Cannot enqueue Query after invoking quit.
+2023-07-19 14:58:45 info: 🚀 ~ Current Enviroment: development
+2023-07-19 14:58:45 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 14:58:45 error: Cannot enqueue Query after invoking quit.
+2023-07-19 15:00:16 info: 🚀 ~ Current Enviroment: development
+2023-07-19 15:00:16 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 15:00:17 info: 🚀 ~ Database Connected
+2023-07-19 15:00:52 info: 🚀 ~ Current Enviroment: development
+2023-07-19 15:00:52 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 15:00:52 info: 🚀 ~ Database Connected
+2023-07-19 15:01:18 info: 🚀 ~ Current Enviroment: development
+2023-07-19 15:01:18 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 15:01:18 info: 🚀 ~ Database Connected
+2023-07-19 15:01:23 info: 🚀 ~ Current Enviroment: development
+2023-07-19 15:01:23 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 15:01:23 info: 🚀 ~ Database Connected
+2023-07-19 15:01:29 info: 🚀 ~ Current Enviroment: development
+2023-07-19 15:01:29 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 15:01:29 info: 🚀 ~ Database Connected
+2023-07-19 15:01:34 info: 🚀 ~ Current Enviroment: development
+2023-07-19 15:01:34 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 15:01:34 info: 🚀 ~ Database Connected
+2023-07-19 15:01:51 info: 🚀 ~ Current Enviroment: development
+2023-07-19 15:01:51 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 15:01:51 info: 🚀 ~ Database Connected
+2023-07-19 15:01:58 info: 🚀 ~ Current Enviroment: development
+2023-07-19 15:01:58 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 15:01:58 info: 🚀 ~ Database Connected
+2023-07-19 15:02:03 info: 🚀 ~ Current Enviroment: development
+2023-07-19 15:02:03 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 15:02:03 info: 🚀 ~ Database Connected
+2023-07-19 15:02:07 info: 🚀 ~ Current Enviroment: development
+2023-07-19 15:02:07 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 15:02:08 info: 🚀 ~ Database Connected
+2023-07-19 15:02:11 info: 🚀 ~ UserController ~ createUser
+2023-07-19 15:02:11 info: 🚀 ~ UserService ~ createUser
+2023-07-19 15:03:14 info: 🚀 ~ Current Enviroment: development
+2023-07-19 15:03:14 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 15:03:14 info: 🚀 ~ Database Connected
+2023-07-19 15:03:17 info: 🚀 ~ UserController ~ createUser
+2023-07-19 15:03:17 info: 🚀 ~ UserService ~ createUser
+2023-07-19 15:03:17 info: [0mPOST /api/v1/user [32m200[0m 64.081 ms - 157[0m
+2023-07-19 15:03:24 info: 🚀 ~ UserController ~ getAllUsers
+2023-07-19 15:03:24 info: 🚀 ~ UserService ~ getAllUsers
+2023-07-19 15:03:25 info: [0mGET /api/v1/user [32m200[0m 16.072 ms - 139[0m
+2023-07-19 15:04:59 info: 🚀 ~ UserController ~ getUserById ~ 1
+2023-07-19 15:04:59 info: 🚀 ~ UserService ~ getUserById ~ 1
+2023-07-19 15:04:59 info: [0mGET /api/v1/user/1 [32m200[0m 35.751 ms - 136[0m
+2023-07-19 15:05:34 info: 🚀 ~ UserController ~ updateUserById ~ 1
+2023-07-19 15:05:34 info: 🚀 ~ UserService ~ updateUserById ~ 1
+2023-07-19 15:05:34 info: [0mPUT /api/v1/user/1 [32m200[0m 63.394 ms - 51[0m
+2023-07-19 15:05:42 info: 🚀 ~ UserController ~ getUserById ~ 1
+2023-07-19 15:05:42 info: 🚀 ~ UserService ~ getUserById ~ 1
+2023-07-19 15:05:42 info: [0mGET /api/v1/user/1 [32m200[0m 12.883 ms - 145[0m
+2023-07-19 15:05:54 info: 🚀 ~ UserController ~ deleteUserById ~ 1
+2023-07-19 15:05:54 info: 🚀 ~ UserService ~ deleteUserById ~ 1
+2023-07-19 15:05:54 info: [0mDELETE /api/v1/user/1 [32m200[0m 29.559 ms - 26[0m
+2023-07-19 15:06:18 info: 🚀 ~ UserController ~ getAllUsers
+2023-07-19 15:06:18 info: 🚀 ~ UserService ~ getAllUsers
+2023-07-19 15:06:18 info: [0mGET /api/v1/user [32m200[0m 15.719 ms - 12[0m
+2023-07-19 15:06:21 info: 🚀 ~ UserController ~ getUserById ~ 1
+2023-07-19 15:06:21 info: 🚀 ~ UserService ~ getUserById ~ 1
+2023-07-19 15:06:21 error: 🚀 ~ UserService ~ getUserById ~ USER NOT FOUND
+2023-07-19 15:06:21 info: [0mGET /api/v1/user/1 [32m200[0m 12.068 ms - 13[0m
