@@ -145,3 +145,12 @@
 2023-07-19 15:06:21 info: 🚀 ~ UserService ~ getUserById ~ 1
 2023-07-19 15:06:21 error: 🚀 ~ UserService ~ getUserById ~ USER NOT FOUND
 2023-07-19 15:06:21 info: [0mGET /api/v1/user/1 [32m200[0m 12.068 ms - 13[0m
+2023-07-19 15:39:18 info: 🚀 ~ Current Enviroment: development
+2023-07-19 15:39:18 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 15:39:18 info: 🚀 ~ Database Connected
+2023-07-19 15:39:22 info: 🚀 ~ UserController ~ createUser
+2023-07-19 15:39:22 info: 🚀 ~ UserService ~ createUser
+2023-07-19 15:39:22 info: [0mPOST /api/v1/user [32m200[0m 147.104 ms - 219[0m
+2023-07-19 15:42:50 info: 🚀 ~ Current Enviroment: development
+2023-07-19 15:42:50 info: 🚀 ~ Listening to Port: 8000
+2023-07-19 15:42:50 info: 🚀 ~ Database Connected
