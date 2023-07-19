@@ -3,7 +3,7 @@ import { IRoutes } from "../interfaces/route.interface";
 import UserController from "../services/user/user.controller";
 
 class userRoute implements IRoutes {
-  public path = "/user";
+  public path = "/users";
   public router = Router();
   public userController = new UserController();
 
