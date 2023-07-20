@@ -40,7 +40,7 @@ class ProductService extends BaseService<ProductEntity> {
   public async updateProductById(
     productId: string,
     productData: ProductDTO
-  ): Promise<UpdateResult | null> {
+  ): Promise<UpdateResult> {
     logger.info(`🚀 ~ ${ProductService.name} ~ updateProductById ~ ${productId}`);
     const product = await (await this.useRepository).findOneBy({ id: productId });
     !product &&

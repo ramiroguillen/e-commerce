@@ -1,58 +1,124 @@
 import { Request, Response } from "express";
 import { logger } from "../../utils/logger";
 import ProductService from "./product.service";
+import { HttpResponse } from "../../shared/response/http.response";
+import { DeleteResult, UpdateResult } from "typeorm";
 
 class ProductController {
-  private readonly ProductService: ProductService = new ProductService();
-  constructor() {}
+  constructor(
+    private readonly productService: ProductService = new ProductService(),
+    private readonly httpResponse: HttpResponse = new HttpResponse()
+  ) {}
 
   /**
    * getAllProducts
    */
   public getAllProducts = async (_req: Request, res: Response) => {
     logger.info(`🚀 ~ ${ProductController.name} ~ getAllProducts`);
-    const productResponse = await this.ProductService.getAllProducts();
-    res.status(200).json({ products: productResponse });
+    try {
+      const productResponse = await this.productService.getAllProducts();
+      if (!productResponse) {
+        return this.httpResponse.NotFound(res, "No Products Found");
+      }
+      return this.httpResponse.OK(res, productResponse);
+    } catch (error) {
+      return this.httpResponse.InternalServerError(
+        res,
+        "Internal Server Error"
+      );
+    }
   };
   /**
    * getProductById
    */
   public getProductById = async (req: Request, res: Response) => {
+    logger.info(`🚀 ~ ${ProductController.name} ~ getProductById`);
     const { id: productId } = req.params;
-    logger.info(`🚀 ~ ${ProductController.name} ~ getProductById ~ ${productId}`);
-    const productResponse = await this.ProductService.getProductById(productId);
-    res.status(200).json({ product: productResponse });
+    try {
+      const productResponse = await this.productService.getProductById(
+        productId
+      );
+      if (!productResponse) {
+        return this.httpResponse.NotFound(res, "Product Not Found");
+      }
+      return this.httpResponse.OK(res, productResponse);
+    } catch (error) {
+      return this.httpResponse.InternalServerError(
+        res,
+        "Internal Server Error"
+      );
+    }
   };
   /**
    * createProduct
    */
   public createProduct = async (req: Request, res: Response) => {
-    const { body: productData } = req;
     logger.info(`🚀 ~ ${ProductController.name} ~ createProduct`);
-    const productResponse = await this.ProductService.createProduct(productData);
-    res.status(200).json({ product: productResponse });
+    const { body: productData } = req;
+    try {
+      const productResponse = await this.productService.createProduct(
+        productData
+      );
+      return this.httpResponse.OK(res, productResponse);
+    } catch (error) {
+      return this.httpResponse.InternalServerError(
+        res,
+        "Internal Server Error"
+      );
+    }
   };
   /**
    * updateProductById
    */
   public updateProductById = async (req: Request, res: Response) => {
+    logger.info(`🚀 ~ ${ProductController.name} ~ updateProductById`);
     const { id: productId } = req.params;
     const { body: productData } = req;
-    logger.info(`🚀 ~ ${ProductController.name} ~ updateProductById ~ ${productId}`);
-    const productResponse = await this.ProductService.updateProductById(
-      productId,
-      productData
-    );
-    res.status(200).json({ product: productResponse });
+    try {
+      const productResponse: UpdateResult =
+        await this.productService.updateProductById(productId, productData);
+      if (!productResponse) {
+        return this.httpResponse.NotFound(res, "Product Not Found");
+      }
+      if (!productResponse.affected) {
+        return this.httpResponse.InternalServerError(
+          res,
+          "Product can not be updated"
+        );
+      }
+      return this.httpResponse.OK(res, productResponse);
+    } catch (error) {
+      return this.httpResponse.InternalServerError(
+        res,
+        "Internal Server Error"
+      );
+    }
   };
   /**
    * deleteProductById
    */
   public deleteProductById = async (req: Request, res: Response) => {
+    logger.info(`🚀 ~ ${ProductController.name} ~ deleteProductById`);
     const { id: productId } = req.params;
-    logger.info(`🚀 ~ ${ProductController.name} ~ deleteProductById ~ ${productId}`);
-    await this.ProductService.deleteProductById(productId);
-    res.status(200).json({ message: `Product deleted` });
+    try {
+      const productResponse: DeleteResult =
+        await this.productService.deleteProductById(productId);
+      if (!productResponse) {
+        return this.httpResponse.NotFound(res, "Product Not Found");
+      }
+      if (!productResponse.affected) {
+        return this.httpResponse.InternalServerError(
+          res,
+          "Product can not be deleted"
+        );
+      }
+      return this.httpResponse.OK(res, productResponse);
+    } catch (error) {
+      return this.httpResponse.InternalServerError(
+        res,
+        "Internal Server Error"
+      );
+    }
   };
 }
 

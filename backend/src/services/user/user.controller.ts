@@ -1,64 +1,123 @@
 import { Request, Response } from "express";
 import { logger } from "../../utils/logger";
 import UserService from "./user.service";
+import { HttpResponse } from "../../shared/response/http.response";
+import { DeleteResult, UpdateResult } from "typeorm";
 
 class UserController {
-  private readonly UserService: UserService = new UserService();
-  constructor() {}
+  constructor(
+    private readonly userService: UserService = new UserService(),
+    private readonly httpResponse: HttpResponse = new HttpResponse()
+  ) {}
 
   /**
    * getAllUsers
    */
   public getAllUsers = async (_req: Request, res: Response) => {
     logger.info(`🚀 ~ ${UserController.name} ~ getAllUsers`);
-    const userResponse = await this.UserService.getAllUsers();
-    res.status(200).json({ users: userResponse });
+    try {
+      const userResponse = await this.userService.getAllUsers();
+      if (!userResponse) {
+        return this.httpResponse.NotFound(res, "No Users Found");
+      }
+      return this.httpResponse.OK(res, userResponse);
+    } catch (error) {
+      return this.httpResponse.InternalServerError(
+        res,
+        "Internal Server Error"
+      );
+    }
   };
   /**
    * getUserById
    */
   public getUserById = async (req: Request, res: Response) => {
+    logger.info(`🚀 ~ ${UserController.name} ~ getUserById`);
     const { id: userId } = req.params;
-    logger.info(`🚀 ~ ${UserController.name} ~ getUserById ~ ${userId}`);
-    const userResponse = await this.UserService.getUserById(userId);
-    res
-      .status(200)
-      .json({ user: userResponse });
+    try {
+      const userResponse = await this.userService.getUserById(userId);
+      if (!userResponse) {
+        return this.httpResponse.NotFound(res, "User Not Found");
+      }
+      return this.httpResponse.OK(res, userResponse);
+    } catch (error) {
+      return this.httpResponse.InternalServerError(
+        res,
+        "Internal Server Error"
+      );
+    }
   };
   /**
    * createUser
    */
   public createUser = async (req: Request, res: Response) => {
-    const { body: userData } = req;
     logger.info(`🚀 ~ ${UserController.name} ~ createUser`);
-    const userResponse = await this.UserService.createUser(userData);
-    res.status(200).json({ user: userResponse });
+    const { body: userData } = req;
+    try {
+      const userResponse = await this.userService.createUser(userData);
+      return this.httpResponse.OK(res, userResponse);
+    } catch (error) {
+      return this.httpResponse.InternalServerError(
+        res,
+        "Internal Server Error"
+      );
+    }
   };
   /**
-   * updateUser
+   * updateUserById
    */
   public updateUserById = async (req: Request, res: Response) => {
+    logger.info(`🚀 ~ ${UserController.name} ~ updateUserById`);
     const { id: userId } = req.params;
     const { body: userData } = req;
-    logger.info(
-      `🚀 ~ ${UserController.name} ~ updateUserById ~ ${userId}`
-    );
-    const userResponse = await this.UserService.updateUserById(
-      userId,
-      userData
-    );
-    res
-      .status(200)
-      .json({ user: userResponse });
+    try {
+      const userResponse: UpdateResult = await this.userService.updateUserById(
+        userId,
+        userData
+      );
+      if (!userResponse) {
+        return this.httpResponse.NotFound(res, "User Not Found");
+      }
+      if (!userResponse.affected) {
+        return this.httpResponse.InternalServerError(
+          res,
+          "User can not be updated"
+        );
+      }
+      return this.httpResponse.OK(res, userResponse);
+    } catch (error) {
+      return this.httpResponse.InternalServerError(
+        res,
+        "Internal Server Error"
+      );
+    }
   };
   /**
-   * deleteUser
+   * deleteUserById
    */
   public deleteUserById = async (req: Request, res: Response) => {
+    logger.info(`🚀 ~ ${UserController.name} ~ deleteUserById`);
     const { id: userId } = req.params;
-    logger.info(`🚀 ~ ${UserController.name} ~ deleteUserById ~ ${userId}`);
-    await this.UserService.deleteUserById(userId);
-    res.status(200).json({ message: `User deleted`});
+    try {
+      const userResponse: DeleteResult = await this.userService.deleteUserById(
+        userId
+      );
+      if (!userResponse) {
+        return this.httpResponse.NotFound(res, "User Not Found");
+      }
+      if (!userResponse.affected) {
+        return this.httpResponse.InternalServerError(
+          res,
+          "User can not be deleted"
+        );
+      }
+      return this.httpResponse.OK(res, "User Deleted");
+    } catch (error) {
+      return this.httpResponse.InternalServerError(
+        res,
+        "Internal Server Error"
+      );
+    }
   };
 }
 

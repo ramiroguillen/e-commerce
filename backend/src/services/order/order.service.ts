@@ -40,7 +40,7 @@ class OrderService extends BaseService<OrderEntity> {
   public async updateOrderById(
     orderId: string,
     orderData: OrderDTO
-  ): Promise<UpdateResult | null> {
+  ): Promise<UpdateResult> {
     logger.info(`🚀 ~ ${OrderService.name} ~ updateOrderById ~ ${orderId}`);
     const order = await (await this.useRepository).findOneBy({ id: orderId });
     !order &&

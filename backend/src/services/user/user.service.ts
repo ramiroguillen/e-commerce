@@ -46,7 +46,7 @@ class UserService extends BaseService<UserEntity> {
   public async updateUserById(
     userId: string,
     userData: UserDTO
-  ): Promise<UpdateResult | null> {
+  ): Promise<UpdateResult> {
     logger.info(`🚀 ~ ${UserService.name} ~ updateUserById ~ ${userId}`);
     const user = await (await this.useRepository).findOneBy({ id: userId });
     !user &&

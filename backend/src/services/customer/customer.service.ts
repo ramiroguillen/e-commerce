@@ -40,7 +40,7 @@ class CustomerService extends BaseService<CustomerEntity> {
   public async updateCustomerById(
     customerId: string,
     customerData: CustomerDTO
-  ): Promise<UpdateResult | null> {
+  ): Promise<UpdateResult> {
     logger.info(`🚀 ~ ${CustomerService.name} ~ updateCustomerById ~ ${customerId}`);
     const customer = await (await this.useRepository).findOneBy({ id: customerId });
     !customer &&

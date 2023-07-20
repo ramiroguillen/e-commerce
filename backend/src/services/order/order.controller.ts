@@ -1,58 +1,120 @@
 import { Request, Response } from "express";
 import { logger } from "../../utils/logger";
 import OrderService from "./order.service";
+import { HttpResponse } from "../../shared/response/http.response";
+import { DeleteResult, UpdateResult } from "typeorm";
 
 class OrderController {
-  private readonly OrderService: OrderService = new OrderService();
-  constructor() {}
+  constructor(
+    private readonly orderService: OrderService = new OrderService(),
+    private readonly httpResponse: HttpResponse = new HttpResponse()
+  ) {}
 
   /**
    * getAllOrders
    */
   public getAllOrders = async (_req: Request, res: Response) => {
     logger.info(`🚀 ~ ${OrderController.name} ~ getAllOrders`);
-    const orderResponse = await this.OrderService.getAllOrders();
-    res.status(200).json({ orders: orderResponse });
+    try {
+      const orderResponse = await this.orderService.getAllOrders();
+      if (!orderResponse) {
+        return this.httpResponse.NotFound(res, "No Orders Found");
+      }
+      return this.httpResponse.OK(res, orderResponse);
+    } catch (error) {
+      return this.httpResponse.InternalServerError(
+        res,
+        "Internal Server Error"
+      );
+    }
   };
   /**
    * getOrderById
    */
   public getOrderById = async (req: Request, res: Response) => {
+    logger.info(`🚀 ~ ${OrderController.name} ~ getOrderById`);
     const { id: orderId } = req.params;
-    logger.info(`🚀 ~ ${OrderController.name} ~ getOrderById ~ ${orderId}`);
-    const orderResponse = await this.OrderService.getOrderById(orderId);
-    res.status(200).json({ order: orderResponse });
+    try {
+      const orderResponse = await this.orderService.getOrderById(orderId);
+      if (!orderResponse) {
+        return this.httpResponse.NotFound(res, "Order Not Found");
+      }
+      return this.httpResponse.OK(res, orderResponse);
+    } catch (error) {
+      return this.httpResponse.InternalServerError(
+        res,
+        "Internal Server Error"
+      );
+    }
   };
   /**
    * createOrder
    */
   public createOrder = async (req: Request, res: Response) => {
-    const { body: orderData } = req;
     logger.info(`🚀 ~ ${OrderController.name} ~ createOrder`);
-    const orderResponse = await this.OrderService.createOrder(orderData);
-    res.status(200).json({ order: orderResponse });
+    const { body: orderData } = req;
+    try {
+      const orderResponse = await this.orderService.createOrder(orderData);
+      return this.httpResponse.OK(res, orderResponse);
+    } catch (error) {
+      return this.httpResponse.InternalServerError(
+        res,
+        "Internal Server Error"
+      );
+    }
   };
   /**
-   * updateOrder
+   * updateOrderById
    */
   public updateOrderById = async (req: Request, res: Response) => {
+    logger.info(`🚀 ~ ${OrderController.name} ~ updateOrderById`);
     const { id: orderId } = req.params;
     const { body: orderData } = req;
-    logger.info(`🚀 ~ ${OrderController.name} ~ updateOrderById ~ ${orderId}`);
-    const orderResponse = await this.OrderService.updateOrderById(
-      orderId,
-      orderData
-    );
-    res.status(200).json({ order: orderResponse });
+    try {
+      const orderResponse: UpdateResult =
+        await this.orderService.updateOrderById(orderId, orderData);
+      if (!orderResponse) {
+        return this.httpResponse.NotFound(res, "Order Not Found");
+      }
+      if (!orderResponse.affected) {
+        return this.httpResponse.InternalServerError(
+          res,
+          "Order can not be updated"
+        );
+      }
+      return this.httpResponse.OK(res, orderResponse);
+    } catch (error) {
+      return this.httpResponse.InternalServerError(
+        res,
+        "Internal Server Error"
+      );
+    }
   };
   /**
-   * deleteOrder
+   * deleteOrderById
    */
   public deleteOrderById = async (req: Request, res: Response) => {
+    logger.info(`🚀 ~ ${OrderController.name} ~ deleteOrderById`);
     const { id: orderId } = req.params;
-    logger.info(`🚀 ~ ${OrderController.name} ~ deleteOrderById ~ ${orderId}`);
-    await this.OrderService.deleteOrderById(orderId);
-    res.status(200).json({ message: `Order deleted` });
+    try {
+      const orderResponse: DeleteResult =
+        await this.orderService.deleteOrderById(orderId);
+      if (!orderResponse) {
+        return this.httpResponse.NotFound(res, "Order Not Found");
+      }
+      if (!orderResponse.affected) {
+        return this.httpResponse.InternalServerError(
+          res,
+          "Order can not be deleted"
+        );
+      }
+      return this.httpResponse.OK(res, orderResponse);
+    } catch (error) {
+      return this.httpResponse.InternalServerError(
+        res,
+        "Internal Server Error"
+      );
+    }
   };
 }
 
