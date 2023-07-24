@@ -1,6 +1,6 @@
 import { config } from "dotenv";
 import { DataSource } from "typeorm";
-import { AppDataSource } from "./data.source";
+import { AppDataSource } from "../database/data-source";
 
 config({ path: `.env.${process.env.NODE_ENV || "development"}.local` });
 

@@ -11,9 +11,9 @@
     "lint": "eslint src/**/*.ts",
     "lint:format": "eslint src/**/*.ts --fix",
     "tsc": "tsc",
-    "typeorm": "typeorm-ts-node-esm -d ./src/config/data.source.ts",
-    "mig:gen": "npm run typeorm migration:generate",
-    "mig:run": "npm run typeorm migration:run"
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
+    "db:migrate:gen": "npm run typeorm migration:generate -- -d ./src/database/data-source.ts ./src/database/migrations/$npm_config_name",
+    "db:migrate": "npm run typeorm migration:run -- -d ./src/database/data-source.ts"
   },
   "author": "",
   "license": "ISC",
