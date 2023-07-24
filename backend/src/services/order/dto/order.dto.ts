@@ -1,4 +1,5 @@
 import { IsDate, IsNotEmpty, IsOptional } from "class-validator";
+import { OrderStatus } from "../type/order.type";
 
 export class OrderDTO {
   @IsOptional()
@@ -8,7 +9,7 @@ export class OrderDTO {
   @IsNotEmpty()
   total!: number;
   @IsNotEmpty()
-  status!: string;
+  status!: OrderStatus;
   @IsDate()
   @IsOptional()
   createdAt!: Date;

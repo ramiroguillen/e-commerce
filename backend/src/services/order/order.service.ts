@@ -2,7 +2,7 @@ import { BaseService } from "../base.service";
 import { logger } from "../../utils/logger";
 import { OrderDTO } from "./dto/order.dto";
 import { DeleteResult, UpdateResult } from "typeorm";
-import OrderEntity from "../../database/order.entity";
+import OrderEntity from "../../database/entities/order.entity";
 
 class OrderService extends BaseService<OrderEntity> {
   constructor() {

@@ -2,7 +2,7 @@ import { BaseService } from "../base.service";
 import { logger } from "../../utils/logger";
 import { ProductDTO } from "./dto/product.dto";
 import { DeleteResult, UpdateResult } from "typeorm";
-import ProductEntity from "../../database/product.entity";
+import ProductEntity from "../../database/entities/product.entity";
 
 class ProductService extends BaseService<ProductEntity> {
   constructor() {
