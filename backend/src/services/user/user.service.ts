@@ -1,6 +1,6 @@
 import { BaseService } from "../base.service";
 import { logger } from "../../utils/logger";
-import UserEntity from "../../database/user.entity";
+import UserEntity from "../../database/entities/user.entity";
 import { UserDTO } from "./dto/user.dto";
 import { DeleteResult, UpdateResult } from "typeorm";
 import { createHashValue } from "../../utils/crypt";
