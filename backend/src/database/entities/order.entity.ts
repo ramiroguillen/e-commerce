@@ -10,7 +10,7 @@ import {
 } from "typeorm";
 import CustomerEntity from "./customer.entity";
 import ProductEntity from "./product.entity";
-import { OrderStatus } from "../../services/order/type/order.type";
+import { OrderStatusType } from "../../services/order/type/order.type";
 
 @Entity({ name: "order" })
 class OrderEntity {
@@ -25,8 +25,10 @@ class OrderEntity {
   notes?: string;
   @Column()
   total!: number;
-  @Column({ type: "enum", enum: OrderStatus, nullable: false })
-  status!: OrderStatus;
+  @Column({ type: "enum", enum: OrderStatusType, nullable: false })
+  status!: OrderStatusType;
+  @Column()
+  payment!: boolean;
   @CreateDateColumn()
   createdAt!: Date;
   @UpdateDateColumn()

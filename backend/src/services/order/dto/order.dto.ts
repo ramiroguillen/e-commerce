@@ -1,5 +1,5 @@
 import { IsDate, IsNotEmpty, IsOptional } from "class-validator";
-import { OrderStatus } from "../type/order.type";
+import { OrderStatusType } from "../type/order.type";
 
 export class OrderDTO {
   @IsOptional()
@@ -9,7 +9,9 @@ export class OrderDTO {
   @IsNotEmpty()
   total!: number;
   @IsNotEmpty()
-  status!: OrderStatus;
+  status!: OrderStatusType;
+  @IsNotEmpty()
+  payment!: boolean;
   @IsDate()
   @IsOptional()
   createdAt!: Date;

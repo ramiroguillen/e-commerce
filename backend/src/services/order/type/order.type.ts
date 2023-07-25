@@ -1,4 +1,4 @@
-export enum OrderStatus {
+export enum OrderStatusType {
   GENERATED = "GENERATED",
   CONFIRMED = "CONFIRMED",
   PREPARING = "PREPARING",
