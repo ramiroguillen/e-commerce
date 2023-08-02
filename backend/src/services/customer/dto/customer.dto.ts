@@ -1,4 +1,5 @@
 import { IsDate, IsNotEmpty, IsOptional } from "class-validator";
+import UserEntity from "../../../database/entities/user.entity";
 
 export class CustomerDTO {
   @IsOptional()
@@ -9,6 +10,8 @@ export class CustomerDTO {
   lastName!: string;
   @IsNotEmpty()
   address!: string;
+  @IsNotEmpty()
+  user!: UserEntity;
   @IsDate()
   @IsOptional()
   createdAt!: Date;
