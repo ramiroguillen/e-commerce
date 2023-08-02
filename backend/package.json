@@ -4,16 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "cross-env NODE_ENV=development ts-node-dev ./src/index.ts",
     "start:test": "cross-env NODE_ENV=test ts-node ./src/index.ts",
     "start:prod": "cross-env NODE_ENV=production ts-node ./src/index.ts",
-    "lint": "eslint src/**/*.ts",
-    "lint:format": "eslint src/**/*.ts --fix",
-    "tsc": "tsc",
+    "build:tsc": "tsc",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
     "db:migrate:gen": "npm run typeorm migration:generate -- -d ./src/database/data-source.ts ./src/database/migrations/$npm_config_name",
-    "db:migrate": "npm run typeorm migration:run -- -d ./src/database/data-source.ts"
+    "db:migrate": "npm run typeorm migration:run -- -d ./src/database/data-source.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",

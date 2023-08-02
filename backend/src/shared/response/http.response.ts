@@ -9,6 +9,13 @@ export class HttpResponse {
       data,
     });
   }
+  BadRequest(res: Response, data: any) {
+    return res.status(StatusCodes.BAD_REQUEST).json({
+      status: StatusCodes.BAD_REQUEST,
+      statusMessage: ReasonPhrases.BAD_REQUEST,
+      data,
+    });
+  }
   NotFound(res: Response, data: any) {
     return res.status(StatusCodes.NOT_FOUND).json({
       status: StatusCodes.NOT_FOUND,
