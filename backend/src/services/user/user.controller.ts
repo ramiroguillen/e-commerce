@@ -48,6 +48,44 @@ class UserController {
     }
   };
   /**
+   * getUserByIdWithRel
+   */
+  public getUserByIdWithRel = async (req: Request, res: Response) => {
+    logger.info(`🚀 ~ ${UserController.name} ~ getUserByIdWithRel`);
+    const { id: userId } = req.params;
+    try {
+      const userResponse = await this.userService.getUserByIdWithRel(userId);
+      if (!userResponse) {
+        return this.httpResponse.NotFound(res, "User Not Found");
+      }
+      return this.httpResponse.OK(res, userResponse);
+    } catch (error) {
+      return this.httpResponse.InternalServerError(
+        res,
+        "Internal Server Error"
+      );
+    }
+  };
+  /**
+   * getUserByEmail
+   */
+  public getUserByEmail = async (req: Request, res: Response) => {
+    logger.info(`🚀 ~ ${UserController.name} ~ getUserByEmail`);
+    const { email: userEmail } = req.params;
+    try {
+      const userResponse = await this.userService.getUserByEmail(userEmail);
+      if (!userResponse) {
+        return this.httpResponse.NotFound(res, "User Not Found");
+      }
+      return this.httpResponse.OK(res, userResponse);
+    } catch (error) {
+      return this.httpResponse.InternalServerError(
+        res,
+        "Internal Server Error"
+      );
+    }
+  };
+  /**
    * createUser
    */
   public createUser = async (req: Request, res: Response) => {

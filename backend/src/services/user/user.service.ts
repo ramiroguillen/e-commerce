@@ -28,6 +28,38 @@ class UserService extends BaseService<UserEntity> {
     return user;
   }
   /**
+   * getUserByIdWithRel
+   */
+  public async getUserByIdWithRel(userId: string): Promise<UserEntity | null> {
+    logger.info(`🚀 ~ ${UserService.name} ~ getUserByIdWithRel ~ ${userId}`);
+    const user = await (await this.useRepository)
+      .createQueryBuilder("user")
+      .leftJoinAndSelect("user.customer", "customer")
+      .where({ id: userId })
+      .getOne();
+    !user &&
+      logger.error(
+        `🚀 ~ ${UserService.name} ~ getUserByIdWithRel ~ USER NOT FOUND`
+      );
+    return user;
+  }
+  /**
+   * getUserByEmail
+   */
+  public async getUserByEmail(userEmail: string): Promise<UserEntity | null> {
+    logger.info(`🚀 ~ ${UserService.name} ~ getUserByEmail ~ ${userEmail}`);
+    const user = await (await this.useRepository)
+      .createQueryBuilder("user")
+      .addSelect("user.password")
+      .where({ email: userEmail })
+      .getOne();
+    !user &&
+      logger.error(
+        `🚀 ~ ${UserService.name} ~ getUserByEmail ~ USER NOT FOUND`
+      );
+    return user;
+  }
+  /**
    * createUser
    */
   public async createUser(userData: UserDTO): Promise<UserEntity | null> {

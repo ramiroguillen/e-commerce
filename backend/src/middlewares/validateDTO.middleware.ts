@@ -14,7 +14,7 @@ export class ValidateDTOMiddleware {
     validate(dtoObject).then((err): any => {
       if (err.length > 0) {
         const dtoErrors = err.map((error: ValidationError) =>
-          (Object as any).values(error.constraints).join("")
+          (Object as any).values(error.constraints).join(" ")
         );
         return this.httpResponse.BadRequest(res, dtoErrors);
       } else {
