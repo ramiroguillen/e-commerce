@@ -1,8 +1,8 @@
 import { Router } from "express";
-import OrderController from "../services/order/order.controller";
+import OrderController from "../modules/order/order.controller";
 import { BaseRoute } from "./base.route";
 import { ValidateDTOMiddleware } from "../middlewares/validateDTO.middleware";
-import { OrderDTO } from "../services/order/dto/order.dto";
+import { OrderDTO } from "../modules/order/dto/order.dto";
 
 class orderRoute extends BaseRoute<OrderController, ValidateDTOMiddleware> {
   public path = "/orders";

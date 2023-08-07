@@ -44,6 +44,11 @@
             "date": 1690227811079,
             "name": "/Users/ramiroguillen/Documents/wonder-botanics/backend/src/logs/error/2023-07-24.log",
             "hash": "50dd013fa71824902eb31db9a25cc05d5b6a5cbe0f93930de97867abf3d640a4"
+        },
+        {
+            "date": 1691435102723,
+            "name": "/Users/ramiroguillen/Documents/wonder-botanics/backend/src/logs/error/2023-08-07.log",
+            "hash": "b8d6844899c3c206d3e795e0c055ddffd924a29f45f30bacf02d3d3d51c70d1e"
         }
     ],
     "hashType": "sha256"

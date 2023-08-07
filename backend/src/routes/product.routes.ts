@@ -1,8 +1,8 @@
 import { Router } from "express";
-import ProductController from "../services/product/product.controller";
+import ProductController from "../modules/product/product.controller";
 import { BaseRoute } from "./base.route";
 import { ValidateDTOMiddleware } from "../middlewares/validateDTO.middleware";
-import { ProductDTO } from "../services/product/dto/product.dto";
+import { ProductDTO } from "../modules/product/dto/product.dto";
 
 class productRoute extends BaseRoute<ProductController, ValidateDTOMiddleware> {
   public path = "/products";

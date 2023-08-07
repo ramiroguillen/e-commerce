@@ -14,9 +14,9 @@ import {
   NODE_ENV,
   PORT,
 } from "./config/config";
-import { IRoutes } from "./interfaces/route.interface";
 import { logger, stream } from "./utils/logger";
 import corsConfig from "./config/cors.config";
+import { IRoutes } from "./interfaces/routes.interface";
 
 class App extends ConfigServer {
   public app: express.Application;
@@ -33,6 +33,7 @@ class App extends ConfigServer {
     this.connectToDatabase();
     this.initMiddlewares();
     this.initRoutes(routes);
+    this.usePassport();
     this.initSwagger();
     this.initErrorHandling();
   }
@@ -86,6 +87,13 @@ class App extends ConfigServer {
     routes.forEach((route) => {
       this.app.use(`/api/${API_VERSION}`, route.router);
     });
+  }
+
+  /**
+   * usePassport
+   */
+  public usePassport() {
+    return;
   }
 
   /**

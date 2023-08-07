@@ -1,8 +1,8 @@
 import { Router } from "express";
-import UserController from "../services/user/user.controller";
+import UserController from "../modules/user/user.controller";
 import { BaseRoute } from "./base.route";
 import { ValidateDTOMiddleware } from "../middlewares/validateDTO.middleware";
-import { UserDTO } from "../services/user/dto/user.dto";
+import { UserDTO } from "../modules/user/dto/user.dto";
 
 class userRoute extends BaseRoute<UserController, ValidateDTOMiddleware> {
   public path = "/users";

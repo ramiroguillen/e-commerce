@@ -1,8 +1,8 @@
 import { Router } from "express";
-import CustomerController from "../services/customer/customer.controller";
+import CustomerController from "../modules/customer/customer.controller";
 import { BaseRoute } from "./base.route";
 import { ValidateDTOMiddleware } from "../middlewares/validateDTO.middleware";
-import { CustomerDTO } from "../services/customer/dto/customer.dto";
+import { CustomerDTO } from "../modules/customer/dto/customer.dto";
 
 class customerRoute extends BaseRoute<
   CustomerController,
