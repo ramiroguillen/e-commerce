@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { logger } from "../../utils/logger";
 import OrderService from "./order.service";
-import { HttpResponse } from "../../shared/response/http.response";
+import { HttpResponse } from "../../utils/http-response";
 import { DeleteResult, UpdateResult } from "typeorm";
 
 class OrderController {

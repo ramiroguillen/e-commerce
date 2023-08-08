@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { HttpResponse } from "../shared/response/http.response";
+import { HttpResponse } from "../utils/http-response";
 import { plainToInstance } from "class-transformer";
 import { ValidationError, validate } from "class-validator";
 import { sanitize } from "class-sanitizer";

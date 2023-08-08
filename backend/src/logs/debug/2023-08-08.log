@@ -17,3 +17,15 @@
 2023-08-08 13:42:31 info: 🚀 ~ UserController ~ getUserByEmail
 2023-08-08 13:42:31 info: 🚀 ~ UserService ~ getUserByEmail ~ wonderbotanics@gmail.com
 2023-08-08 13:42:31 info: [0mGET /api/v1/users/email/wonderbotanics@gmail.com [32m200[0m 18.632 ms - 253[0m
+2023-08-08 13:50:25 info: 🚀 ~ Current Enviroment: development
+2023-08-08 13:50:25 info: 🚀 ~ Listening to Port: 8000
+2023-08-08 13:50:25 info: 🚀 ~ Database Connected
+2023-08-08 14:03:43 info: 🚀 ~ Current Enviroment: development
+2023-08-08 14:03:43 info: 🚀 ~ Listening to Port: 8000
+2023-08-08 14:03:43 info: 🚀 ~ Database Connected
+2023-08-08 14:04:25 info: 🚀 ~ Current Enviroment: development
+2023-08-08 14:04:25 info: 🚀 ~ Listening to Port: 8000
+2023-08-08 14:04:25 info: 🚀 ~ Database Connected
+2023-08-08 14:16:25 info: 🚀 ~ Current Enviroment: development
+2023-08-08 14:16:25 info: 🚀 ~ Listening to Port: 8000
+2023-08-08 14:16:25 info: 🚀 ~ Database Connected
