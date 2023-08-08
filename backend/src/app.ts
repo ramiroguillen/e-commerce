@@ -17,7 +17,8 @@ import {
 import { logger, stream } from "./utils/logger";
 import corsConfig from "./config/cors.config";
 import { IRoutes } from "./interfaces/routes.interface";
-import { LoginStrategy } from "./modules/auth/strategies/local.strategy";
+import { LocalStrategy } from "./modules/auth/strategies/local.strategy";
+import { JwtStrategy } from "./modules/auth/strategies/jwt.strategy";
 
 class App extends ConfigServer {
   public app: express.Application;
@@ -94,7 +95,7 @@ class App extends ConfigServer {
    * usePassport
    */
   public usePassport() {
-    return [new LoginStrategy().use];
+    return [new LocalStrategy().use, new JwtStrategy().use];
   }
 
   /**

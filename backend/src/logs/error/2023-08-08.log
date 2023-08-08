@@ -1,1 +1,33 @@
 2023-08-08 13:41:41 error: 🚀 ~ UserService ~ getUserById ~ USER NOT FOUND
+2023-08-08 14:20:17 error: uncaughtException: ⨯ Unable to compile TypeScript:
+src/modules/auth/strategies/local.strategy.ts(4,26): error TS2440: Import declaration conflicts with local declaration of 'LocalStrategy'.
+src/modules/auth/strategies/local.strategy.ts(4,38): error TS2395: Individual declarations in merged declaration 'LocalStrategy' must be all exported or all local.
+src/modules/auth/strategies/local.strategy.ts(6,14): error TS2395: Individual declarations in merged declaration 'LocalStrategy' must be all exported or all local.
+src/modules/auth/strategies/local.strategy.ts(26,7): error TS2345: Argument of type 'typeof LocalStrategy' is not assignable to parameter of type 'TypeStrategy<Strategy, Object, VerifyFunction>'.
+  Types of construct signatures are incompatible.
+    Type 'new (authService?: AuthService) => LocalStrategy' is not assignable to type 'new (params: Object, Callback: VerifyFunction) => Strategy'.
+      Types of parameters 'authService' and 'params' are incompatible.
+        The 'Object' type is assignable to very few other types. Did you mean to use the 'any' type instead?
+          Type 'Object' is missing the following properties from type 'AuthService': userService, jwtInstance, validateUser, signature, generateJWT
+
+Error: ⨯ Unable to compile TypeScript:
+src/modules/auth/strategies/local.strategy.ts(4,26): error TS2440: Import declaration conflicts with local declaration of 'LocalStrategy'.
+src/modules/auth/strategies/local.strategy.ts(4,38): error TS2395: Individual declarations in merged declaration 'LocalStrategy' must be all exported or all local.
+src/modules/auth/strategies/local.strategy.ts(6,14): error TS2395: Individual declarations in merged declaration 'LocalStrategy' must be all exported or all local.
+src/modules/auth/strategies/local.strategy.ts(26,7): error TS2345: Argument of type 'typeof LocalStrategy' is not assignable to parameter of type 'TypeStrategy<Strategy, Object, VerifyFunction>'.
+  Types of construct signatures are incompatible.
+    Type 'new (authService?: AuthService) => LocalStrategy' is not assignable to type 'new (params: Object, Callback: VerifyFunction) => Strategy'.
+      Types of parameters 'authService' and 'params' are incompatible.
+        The 'Object' type is assignable to very few other types. Did you mean to use the 'any' type instead?
+          Type 'Object' is missing the following properties from type 'AuthService': userService, jwtInstance, validateUser, signature, generateJWT
+
+    at Object.<anonymous> (/Users/ramiroguillen/Documents/wonder-botanics/backend/src/modules/auth/strategies/local.strategy.ts:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1255:14)
+    at Module._compile (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-25637008350179324.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1309:10)
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-25637008350179324.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/jh/bmymblbn4ls6lvxk1w6j6fbw0000gn/T/ts-node-dev-hook-25637008350179324.js:71:20)
+    at Object.nodeDevHook [as .ts] (/Users/ramiroguillen/Documents/wonder-botanics/backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1113:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)

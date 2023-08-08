@@ -1,9 +1,9 @@
 import UserEntity from "../../../database/entities/user.entity";
 import { usePassport } from "../../../utils/passport";
 import { AuthService } from "../auth.service";
-import { VerifyFunction, Strategy as LocalStrategy } from "passport-local";
+import { VerifyFunction, Strategy } from "passport-local";
 
-export class LoginStrategy {
+export class LocalStrategy {
   constructor(private readonly authService: AuthService = new AuthService()) {}
   /**
    * validate
@@ -21,9 +21,9 @@ export class LoginStrategy {
   }
 
   get use() {
-    return usePassport<LocalStrategy, Object, VerifyFunction>(
-      "login",
-      LocalStrategy,
+    return usePassport<Strategy, Object, VerifyFunction>(
+      "local",
+      Strategy,
       { usernameField: "email", passwordField: "password" },
       this.validate
     );
