@@ -10,6 +10,13 @@ class HttpResponse {
             data,
         });
     }
+    BadRequest(res, data) {
+        return res.status(http_status_codes_1.StatusCodes.BAD_REQUEST).json({
+            status: http_status_codes_1.StatusCodes.BAD_REQUEST,
+            statusMessage: http_status_codes_1.ReasonPhrases.BAD_REQUEST,
+            data,
+        });
+    }
     NotFound(res, data) {
         return res.status(http_status_codes_1.StatusCodes.NOT_FOUND).json({
             status: http_status_codes_1.StatusCodes.NOT_FOUND,

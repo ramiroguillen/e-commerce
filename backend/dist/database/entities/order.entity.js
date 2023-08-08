@@ -15,7 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
 const customer_entity_1 = __importDefault(require("./customer.entity"));
 const product_entity_1 = __importDefault(require("./product.entity"));
-const order_type_1 = require("../../services/order/type/order.type");
+const order_type_1 = require("../../modules/order/type/order.type");
 let OrderEntity = class OrderEntity {
     id;
     customer;
@@ -23,6 +23,7 @@ let OrderEntity = class OrderEntity {
     notes;
     total;
     status;
+    payment;
     createdAt;
     updatedAt;
 };
@@ -48,9 +49,13 @@ __decorate([
     __metadata("design:type", Number)
 ], OrderEntity.prototype, "total", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ type: "enum", enum: order_type_1.OrderStatus, nullable: false }),
+    (0, typeorm_1.Column)({ type: "enum", enum: order_type_1.OrderStatusType, nullable: false }),
     __metadata("design:type", String)
 ], OrderEntity.prototype, "status", void 0);
+__decorate([
+    (0, typeorm_1.Column)(),
+    __metadata("design:type", Boolean)
+], OrderEntity.prototype, "payment", void 0);
 __decorate([
     (0, typeorm_1.CreateDateColumn)(),
     __metadata("design:type", Date)

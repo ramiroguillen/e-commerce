@@ -26,6 +26,7 @@ class App extends config_1.ConfigServer {
         this.connectToDatabase();
         this.initMiddlewares();
         this.initRoutes(routes);
+        this.usePassport();
         this.initSwagger();
         this.initErrorHandling();
     }
@@ -74,6 +75,12 @@ class App extends config_1.ConfigServer {
         routes.forEach((route) => {
             this.app.use(`/api/${config_1.API_VERSION}`, route.router);
         });
+    }
+    /**
+     * usePassport
+     */
+    usePassport() {
+        return;
     }
     /**
      * initErrorHandling

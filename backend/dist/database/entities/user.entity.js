@@ -14,7 +14,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
 const customer_entity_1 = __importDefault(require("./customer.entity"));
-const user_type_1 = require("../../services/user/type/user.type");
+const user_type_1 = require("../../modules/user/type/user.type");
 let UserEntity = class UserEntity {
     id;
     email;

@@ -1,0 +1,19 @@
+2023-08-08 13:41:29 info: 🚀 ~ Current Enviroment: development
+2023-08-08 13:41:29 info: 🚀 ~ Listening to Port: 8000
+2023-08-08 13:41:30 info: 🚀 ~ Database Connected
+2023-08-08 13:41:41 info: 🚀 ~ UserController ~ getUserById
+2023-08-08 13:41:41 info: 🚀 ~ UserService ~ getUserById ~ 1
+2023-08-08 13:41:41 error: 🚀 ~ UserService ~ getUserById ~ USER NOT FOUND
+2023-08-08 13:41:41 info: [0mGET /api/v1/users/1 [33m404[0m 40.763 ms - 66[0m
+2023-08-08 13:41:45 info: 🚀 ~ UserController ~ getAllUsers
+2023-08-08 13:41:45 info: 🚀 ~ UserService ~ getAllUsers
+2023-08-08 13:41:45 info: [0mGET /api/v1/users [32m200[0m 11.957 ms - 181[0m
+2023-08-08 13:41:52 info: 🚀 ~ UserController ~ getUserById
+2023-08-08 13:41:52 info: 🚀 ~ UserService ~ getUserById ~ 2
+2023-08-08 13:41:52 info: [0mGET /api/v1/users/2 [32m200[0m 16.399 ms - 179[0m
+2023-08-08 13:41:59 info: 🚀 ~ UserController ~ getUserByIdWithRel
+2023-08-08 13:41:59 info: 🚀 ~ UserService ~ getUserByIdWithRel ~ 2
+2023-08-08 13:41:59 info: [0mGET /api/v1/users/rel/2 [32m200[0m 24.311 ms - 195[0m
+2023-08-08 13:42:31 info: 🚀 ~ UserController ~ getUserByEmail
+2023-08-08 13:42:31 info: 🚀 ~ UserService ~ getUserByEmail ~ wonderbotanics@gmail.com
+2023-08-08 13:42:31 info: [0mGET /api/v1/users/email/wonderbotanics@gmail.com [32m200[0m 18.632 ms - 253[0m
